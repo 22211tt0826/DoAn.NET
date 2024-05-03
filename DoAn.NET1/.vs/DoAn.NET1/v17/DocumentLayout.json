@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\",
+  "WorkspaceRootPath": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doanqlsv.net\\doan.net1\\doan.net1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doan.net\\doan.net1\\doan.net1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\doan.net1\\frmchangepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doan.net\\doan.net1\\doan.net1\\frmchangepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\frmchangepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\doan.net1\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doan.net\\doan.net1\\doan.net1\\frmthongtingv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\frmthongtingv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\doan.net1\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doan.net\\doan.net1\\doan.net1\\frmgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\frmgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\doan.net1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doan.net\\doan.net1\\doan.net1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{101F4DA4-E79A-4872-9BD6-41A87100C7A4}|BLL\\BLL.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{101F4DA4-E79A-4872-9BD6-41A87100C7A4}|BLL\\BLL.csproj|solutionrelative:bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0B6C5C-1029-4936-A594-7EB7EA6CD15A}|DALL\\DALL.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\dall\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0B6C5C-1029-4936-A594-7EB7EA6CD15A}|DALL\\DALL.csproj|solutionrelative:dall\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E038BD58-2C67-4107-AABF-DED525703676}|DTO\\DTO.csproj|D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E038BD58-2C67-4107-AABF-DED525703676}|DTO\\DTO.csproj|solutionrelative:dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|d:\\.net\\doan.net\\doan.net1\\doan.net1\\frmgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0DE8BB3-BB0F-4148-81B8-2D256E29773F}|DoAn.NET1\\GUI.csproj|solutionrelative:doan.net1\\frmgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,100 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmChangePass.cs [Design]",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\frmChangePass.cs",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmChangePass.cs",
               "RelativeDocumentMoniker": "DoAn.NET1\\frmChangePass.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\frmChangePass.cs [Design]",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmChangePass.cs [Design]",
               "RelativeToolTip": "DoAn.NET1\\frmChangePass.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T22:52:40.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\frmLogin.cs",
-              "RelativeDocumentMoniker": "DoAn.NET1\\frmLogin.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\frmLogin.cs [Design]",
-              "RelativeToolTip": "DoAn.NET1\\frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T22:38:47.333Z"
+              "WhenOpened": "2024-05-03T08:55:44.057Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs",
               "RelativeDocumentMoniker": "DoAn.NET1\\Form1.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs [Design]",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs [Design]",
               "RelativeToolTip": "DoAn.NET1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T06:47:55.948Z",
+              "WhenOpened": "2024-05-03T08:51:34.396Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmThongTinGV.cs [Design]",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmThongTinGV.cs",
+              "RelativeDocumentMoniker": "DoAn.NET1\\frmThongTinGV.cs",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmThongTinGV.cs [Design]",
+              "RelativeToolTip": "DoAn.NET1\\frmThongTinGV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T07:57:22.428Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmRegister.cs [Design]",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\frmRegister.cs",
-              "RelativeDocumentMoniker": "DoAn.NET1\\frmRegister.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\frmRegister.cs [Design]",
-              "RelativeToolTip": "DoAn.NET1\\frmRegister.cs [Design]",
+              "Title": "frmGiaoVien.cs [Design]",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmGiaoVien.cs",
+              "RelativeDocumentMoniker": "DoAn.NET1\\frmGiaoVien.cs",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmGiaoVien.cs [Design]",
+              "RelativeToolTip": "DoAn.NET1\\frmGiaoVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T21:41:25.684Z"
+              "WhenOpened": "2024-05-03T08:06:48.268Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs",
               "RelativeDocumentMoniker": "DoAn.NET1\\Form1.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\Form1.cs",
               "RelativeToolTip": "DoAn.NET1\\Form1.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAQwEcAAAABAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAxwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T21:55:59.587Z"
+              "WhenOpened": "2024-05-03T08:52:36.619Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\BLL\\Class1.cs",
-              "RelativeDocumentMoniker": "BLL\\Class1.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\BLL\\Class1.cs",
-              "RelativeToolTip": "BLL\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Title": "frmGiaoVien.cs",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmGiaoVien.cs",
+              "RelativeDocumentMoniker": "DoAn.NET1\\frmGiaoVien.cs",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET1\\DoAn.NET1\\frmGiaoVien.cs",
+              "RelativeToolTip": "DoAn.NET1\\frmGiaoVien.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAhwBcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T06:52:27.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DALL\\Class1.cs",
-              "RelativeDocumentMoniker": "DALL\\Class1.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DALL\\Class1.cs",
-              "RelativeToolTip": "DALL\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T06:52:12.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DTO\\Class1.cs",
-              "RelativeDocumentMoniker": "DTO\\Class1.cs",
-              "ToolTip": "D:\\.NET\\DoAnQLSV.NET\\DoAn.NET1\\DTO\\Class1.cs",
-              "RelativeToolTip": "DTO\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T06:51:49.673Z"
+              "WhenOpened": "2024-05-03T08:48:10.071Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -68,5 +68,54 @@ namespace DoAn.NET1
                 this.Close();
             }
         }
+
+        private void tabHienThi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+          frmGiaoVien frmGiaoVien = new frmGiaoVien();
+            frmGiaoVien.TopLevel = false;
+            frmGiaoVien.AutoScroll = true;
+            DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
+            xt.Controls.Add(frmGiaoVien);
+            frmGiaoVien.Show();
+            tabHienThi.TabPages.Add(xt);
+        }
+
+        private void btnSinhVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmSInhVien frmSInhVien = new frmSInhVien();
+            frmSInhVien.TopLevel = false;
+            frmSInhVien.AutoScroll = true;
+            DevExpress.XtraTab.XtraTabPage sv = new DevExpress.XtraTab.XtraTabPage();
+            sv.Controls.Add(frmSInhVien);
+            frmSInhVien.Show();
+            tabHienThi.TabPages.Add(sv);
+        }
+
+        private void btnDangKiHP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDangKiHocPhan frmDangKiHP = new frmDangKiHocPhan();
+            frmDangKiHP.TopLevel = false;
+            frmDangKiHP.AutoScroll = true;
+            DevExpress.XtraTab.XtraTabPage hp = new DevExpress.XtraTab.XtraTabPage();
+            hp.Controls.Add(frmDangKiHP);
+            frmDangKiHP.Show();
+            tabHienThi.TabPages.Add(hp);
+        }
+
+        private void btnBangDiem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmBangDiem frmBangDiem= new frmBangDiem();
+            frmBangDiem.TopLevel = false;
+            frmBangDiem.AutoScroll = true;
+            DevExpress.XtraTab.XtraTabPage bd = new DevExpress.XtraTab.XtraTabPage();
+            bd.Controls.Add(frmBangDiem);
+            frmBangDiem.Show();
+            tabHienThi.TabPages.Add(bd);
+        }
     }
 }
