@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.NET\\DoAn.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7205653-C164-4455-8282-733B74D34EE8}|DoAn.NET\\DoAn.NET.vbproj|d:\\.net\\doan.net\\doan.net\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F7205653-C164-4455-8282-733B74D34EE8}|DoAn.NET\\DoAn.NET.vbproj|solutionrelative:doan.net\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7205653-C164-4455-8282-733B74D34EE8}|DoAn.NET\\DoAn.NET.vbproj|D:\\.NET\\DoAn.NET\\doan.net\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F7205653-C164-4455-8282-733B74D34EE8}|DoAn.NET\\DoAn.NET.vbproj|solutionrelative:doan.net\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET\\Form1.vb",
+              "RelativeDocumentMoniker": "DoAn.NET\\Form1.vb",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET\\Form1.vb",
+              "RelativeToolTip": "DoAn.NET\\Form1.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T18:10:34.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "D:\\.NET\\DoAn.NET\\DoAn.NET\\Form1.vb",
+              "RelativeDocumentMoniker": "DoAn.NET\\Form1.vb",
+              "ToolTip": "D:\\.NET\\DoAn.NET\\DoAn.NET\\Form1.vb [Design]",
+              "RelativeToolTip": "DoAn.NET\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:17:25.877Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

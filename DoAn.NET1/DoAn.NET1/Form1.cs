@@ -84,6 +84,7 @@ namespace DoAn.NET1
             frmGiaoVien.Show();
             tabHienThi.TabPages.Add(xt);
         }
+<<<<<<< HEAD
 
         private void btnSinhVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -117,5 +118,7 @@ namespace DoAn.NET1
             frmBangDiem.Show();
             tabHienThi.TabPages.Add(bd);
         }
+=======
+>>>>>>> origin/branch
     }
 }

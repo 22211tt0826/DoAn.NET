@@ -121,7 +121,11 @@
   <data name="barButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+<<<<<<< HEAD
         DAAACwwBP0AiyAAA0wRJREFUeF7t/XvQfW1d3gnS8lJQJJ5Ij2WqLE0mEYzhpI0RDZlXHdq0Xdh21HZi
+=======
+        EgAACxIB0t1+/AAA0wRJREFUeF7t/XvQfW1d3gnS8lJQJJ5Ij2WqLE0mEYzhpI0RDZlXHdq0Xdh21HZi
+>>>>>>> origin/branch
         sGONcWps2+rQXeXMhJmkxpF0TBu1LMtoUhw0MYoGZYRGFHlBg9CvgjTng4yoBAWCvqiJfbD/eGZ/1u+5
         9ns93+daa699PjzfX9Xnt/Zz773Xutd9f9f3uu57HfYj/upzntU0TdM0zR0jFjZN0zRNc9nEwqZpmqZp
         LptY2DRN0zTNZRMLm6Zpmqa5bGJh0zRN0zSXTSxsmqZpmuayiYVN0zRN01w2sbBpmqZpmssmFjZN0zRN
@@ -1024,6 +1028,7 @@
         prlsYmHTNE3TNJdNLGyapmma5rKJhU3TNE3TXDLPesT/HygM+JRMjbpYAAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< HEAD
   <data name="btnSinhVien.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1963,6 +1968,8 @@
         Xv4z4j/shDt4Td40rMN6rCsG+FAnbxPtIKL/EXL5C4aQjGB1h9mhAAAAAElFTkSuQmCC
 </value>
   </data>
+=======
+>>>>>>> origin/branch
   <data name="btnLogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAUMVJREFUeF7t

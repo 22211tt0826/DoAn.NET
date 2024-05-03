@@ -64,14 +64,22 @@
             // 
             // TextEdit5
             // 
+<<<<<<< HEAD
             this.TextEdit5.Location = new System.Drawing.Point(630, 137);
+=======
+            this.TextEdit5.Location = new System.Drawing.Point(679, 137);
+>>>>>>> origin/branch
             this.TextEdit5.Name = "TextEdit5";
             this.TextEdit5.Size = new System.Drawing.Size(209, 26);
             this.TextEdit5.TabIndex = 60;
             // 
             // TextEdit6
             // 
+<<<<<<< HEAD
             this.TextEdit6.Location = new System.Drawing.Point(630, 208);
+=======
+            this.TextEdit6.Location = new System.Drawing.Point(679, 208);
+>>>>>>> origin/branch
             this.TextEdit6.Name = "TextEdit6";
             this.TextEdit6.Size = new System.Drawing.Size(209, 26);
             this.TextEdit6.TabIndex = 59;
@@ -193,7 +201,11 @@
             // 
             // TextEdit7
             // 
+<<<<<<< HEAD
             this.TextEdit7.Location = new System.Drawing.Point(630, 281);
+=======
+            this.TextEdit7.Location = new System.Drawing.Point(698, 277);
+>>>>>>> origin/branch
             this.TextEdit7.Name = "TextEdit7";
             this.TextEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -202,7 +214,11 @@
             // 
             // TextEdit4
             // 
+<<<<<<< HEAD
             this.TextEdit4.Location = new System.Drawing.Point(630, 56);
+=======
+            this.TextEdit4.Location = new System.Drawing.Point(679, 56);
+>>>>>>> origin/branch
             this.TextEdit4.Name = "TextEdit4";
             this.TextEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -235,7 +251,11 @@
             // 
             // ComboBoxEdit1
             // 
+<<<<<<< HEAD
             this.ComboBoxEdit1.Location = new System.Drawing.Point(427, 334);
+=======
+            this.ComboBoxEdit1.Location = new System.Drawing.Point(479, 330);
+>>>>>>> origin/branch
             this.ComboBoxEdit1.Name = "ComboBoxEdit1";
             this.ComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
