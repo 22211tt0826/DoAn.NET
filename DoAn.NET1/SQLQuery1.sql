@@ -58,22 +58,18 @@ tenHP nvarchar (30),
 soTC int ,
 loaiHP nvarchar (10),
 gia int ,
+tenHK nvarchar (10),
 maKhoa nvarchar (20) not null,
 maSV nvarchar (20) not null,
 PRIMARY KEY (maHP),
 FOREIGN KEY (maKhoa) REFERENCES  khoa(maKhoa),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV)
 )
-CREATE TABLE hocKi(
-maHP nvarchar (20) not null,
-tenHK nvarchar (10),
-maSV nvarchar (20) not null ,
-PRIMARY KEY (maHP),
-FOREIGN KEY  (maSV) REFERENCES SinhVien(maSV)
-)
+
 CREATE TABLE bangDiem (
 maHP nvarchar (20) not null,
 maSV nvarchar (20) not null, 
+tenHK nvarchar (10),
 diemGK float ,
 diemCK float ,
 diemTB float,
@@ -82,6 +78,7 @@ PRIMARY KEY (maSV,maHP)
 CREATE TABLE hocBong (
 maHB nvarchar (20)not null ,
 loaiHB nvarchar (10),
+tenHK nvarchar (10),
 maSV nvarchar (20) not null, 
 PRIMARY KEY (maHB),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV)
@@ -97,4 +94,3 @@ CREATE TABLE taiKhoan(
 tenTK nvarchar (20),
 passTK nvarchar (20)
 )
-

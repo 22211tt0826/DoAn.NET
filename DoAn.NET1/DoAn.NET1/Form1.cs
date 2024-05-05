@@ -137,5 +137,6 @@ namespace DoAn.NET1
             frmBangDiem.Show();
             tabHienThi.TabPages.Add(bd);
         }
+
     }
 }
