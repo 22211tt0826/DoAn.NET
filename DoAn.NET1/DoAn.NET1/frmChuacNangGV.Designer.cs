@@ -71,8 +71,9 @@
             // 
             // stbnThoat
             // 
+            this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
-            this.stbnThoat.Location = new System.Drawing.Point(613, 475);
+            this.stbnThoat.Location = new System.Drawing.Point(625, 379);
             this.stbnThoat.Name = "stbnThoat";
             this.stbnThoat.Size = new System.Drawing.Size(112, 34);
             this.stbnThoat.TabIndex = 10;
@@ -80,8 +81,9 @@
             // 
             // sbtnXoa
             // 
+            this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
-            this.sbtnXoa.Location = new System.Drawing.Point(613, 392);
+            this.sbtnXoa.Location = new System.Drawing.Point(486, 379);
             this.sbtnXoa.Name = "sbtnXoa";
             this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
             this.sbtnXoa.TabIndex = 11;
@@ -89,8 +91,9 @@
             // 
             // stbnCapNhap
             // 
+            this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
-            this.stbnCapNhap.Location = new System.Drawing.Point(202, 475);
+            this.stbnCapNhap.Location = new System.Drawing.Point(340, 379);
             this.stbnCapNhap.Name = "stbnCapNhap";
             this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
             this.stbnCapNhap.TabIndex = 12;
@@ -98,8 +101,9 @@
             // 
             // sbtnThem
             // 
+            this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
-            this.sbtnThem.Location = new System.Drawing.Point(202, 392);
+            this.sbtnThem.Location = new System.Drawing.Point(202, 379);
             this.sbtnThem.Name = "sbtnThem";
             this.sbtnThem.Size = new System.Drawing.Size(112, 34);
             this.sbtnThem.TabIndex = 13;
@@ -107,6 +111,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupControl1.Controls.Add(this.textEdit1);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.LabelControl9);
@@ -127,7 +132,7 @@
             this.groupControl1.Controls.Add(this.txtChucVu);
             this.groupControl1.Controls.Add(this.txtGioiTinh);
             this.groupControl1.Controls.Add(this.txtNgaySinh);
-            this.groupControl1.Location = new System.Drawing.Point(12, 41);
+            this.groupControl1.Location = new System.Drawing.Point(12, 28);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(935, 319);
             this.groupControl1.TabIndex = 14;
@@ -312,7 +317,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 604);
+            this.ClientSize = new System.Drawing.Size(959, 578);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.stbnThoat);
             this.Controls.Add(this.sbtnXoa);

@@ -67,6 +67,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupControl1.Controls.Add(this.cbHocKi);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.txtSoTC);
@@ -93,6 +94,7 @@
             // 
             // txtSoTC
             // 
+            this.txtSoTC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSoTC.Enabled = false;
             this.txtSoTC.Location = new System.Drawing.Point(155, 151);
             this.txtSoTC.Name = "txtSoTC";
@@ -101,6 +103,7 @@
             // 
             // labelControl3
             // 
+            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl3.Location = new System.Drawing.Point(50, 154);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(43, 19);
@@ -109,6 +112,7 @@
             // 
             // txtMaHP
             // 
+            this.txtMaHP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaHP.Enabled = false;
             this.txtMaHP.Location = new System.Drawing.Point(155, 64);
             this.txtMaHP.Name = "txtMaHP";
@@ -117,6 +121,7 @@
             // 
             // txtMaKhoa
             // 
+            this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaKhoa.Enabled = false;
             this.txtMaKhoa.Location = new System.Drawing.Point(520, 172);
             this.txtMaKhoa.Name = "txtMaKhoa";
@@ -125,6 +130,7 @@
             // 
             // labelControl10
             // 
+            this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl10.Location = new System.Drawing.Point(50, 67);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(45, 19);
@@ -133,6 +139,7 @@
             // 
             // txtLoaiHP
             // 
+            this.txtLoaiHP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLoaiHP.Enabled = false;
             this.txtLoaiHP.Location = new System.Drawing.Point(520, 64);
             this.txtLoaiHP.Name = "txtLoaiHP";
@@ -141,6 +148,7 @@
             // 
             // txtGiaHP
             // 
+            this.txtGiaHP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtGiaHP.Enabled = false;
             this.txtGiaHP.Location = new System.Drawing.Point(520, 121);
             this.txtGiaHP.Name = "txtGiaHP";
@@ -149,6 +157,7 @@
             // 
             // txtTenHP
             // 
+            this.txtTenHP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTenHP.Enabled = false;
             this.txtTenHP.Location = new System.Drawing.Point(155, 106);
             this.txtTenHP.Name = "txtTenHP";
@@ -157,6 +166,7 @@
             // 
             // textEdit3
             // 
+            this.textEdit3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textEdit3.Location = new System.Drawing.Point(178, -34);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(234, 26);
@@ -164,6 +174,7 @@
             // 
             // LabelControl8
             // 
+            this.LabelControl8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl8.Location = new System.Drawing.Point(454, 179);
             this.LabelControl8.Name = "LabelControl8";
             this.LabelControl8.Size = new System.Drawing.Size(60, 19);
@@ -172,6 +183,7 @@
             // 
             // LabelControl7
             // 
+            this.LabelControl7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl7.Location = new System.Drawing.Point(452, 124);
             this.LabelControl7.Name = "LabelControl7";
             this.LabelControl7.Size = new System.Drawing.Size(23, 19);
@@ -180,6 +192,7 @@
             // 
             // LabelControl6
             // 
+            this.LabelControl6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl6.Location = new System.Drawing.Point(452, 67);
             this.LabelControl6.Name = "LabelControl6";
             this.LabelControl6.Size = new System.Drawing.Size(54, 19);
@@ -188,6 +201,7 @@
             // 
             // LabelControl5
             // 
+            this.LabelControl5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl5.Location = new System.Drawing.Point(577, -27);
             this.LabelControl5.Name = "LabelControl5";
             this.LabelControl5.Size = new System.Drawing.Size(42, 19);
@@ -196,6 +210,7 @@
             // 
             // LabelControl2
             // 
+            this.LabelControl2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl2.Location = new System.Drawing.Point(50, 109);
             this.LabelControl2.Name = "LabelControl2";
             this.LabelControl2.Size = new System.Drawing.Size(99, 19);
@@ -204,6 +219,7 @@
             // 
             // LabelControl1
             // 
+            this.LabelControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl1.Location = new System.Drawing.Point(86, -31);
             this.LabelControl1.Name = "LabelControl1";
             this.LabelControl1.Size = new System.Drawing.Size(46, 19);
@@ -212,6 +228,7 @@
             // 
             // TextEdit4
             // 
+            this.TextEdit4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextEdit4.Location = new System.Drawing.Point(639, -30);
             this.TextEdit4.Name = "TextEdit4";
             this.TextEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -221,6 +238,7 @@
             // 
             // stbnThoat
             // 
+            this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
             this.stbnThoat.Location = new System.Drawing.Point(532, 272);
             this.stbnThoat.Name = "stbnThoat";
@@ -230,6 +248,7 @@
             // 
             // sbtnXoa
             // 
+            this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
             this.sbtnXoa.Location = new System.Drawing.Point(392, 272);
             this.sbtnXoa.Name = "sbtnXoa";
@@ -239,6 +258,7 @@
             // 
             // stbnCapNhap
             // 
+            this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
             this.stbnCapNhap.Location = new System.Drawing.Point(248, 272);
             this.stbnCapNhap.Name = "stbnCapNhap";
@@ -248,6 +268,7 @@
             // 
             // sbtnThem
             // 
+            this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
             this.sbtnThem.Location = new System.Drawing.Point(107, 272);
             this.sbtnThem.Name = "sbtnThem";
@@ -257,6 +278,7 @@
             // 
             // labelControl4
             // 
+            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl4.Location = new System.Drawing.Point(50, 192);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(44, 19);
@@ -265,6 +287,7 @@
             // 
             // cbHocKi
             // 
+            this.cbHocKi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbHocKi.Location = new System.Drawing.Point(155, 189);
             this.cbHocKi.Name = "cbHocKi";
             this.cbHocKi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {

@@ -53,6 +53,7 @@
             // 
             // btnHuy
             // 
+            this.btnHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHuy.Location = new System.Drawing.Point(435, 388);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(87, 29);
@@ -61,6 +62,7 @@
             // 
             // btnThay
             // 
+            this.btnThay.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThay.Location = new System.Drawing.Point(201, 388);
             this.btnThay.Name = "btnThay";
             this.btnThay.Size = new System.Drawing.Size(87, 29);
@@ -69,6 +71,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupControl1.Controls.Add(this.textEdit1);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl8);

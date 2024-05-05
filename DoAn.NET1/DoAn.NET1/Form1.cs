@@ -46,6 +46,7 @@ namespace DoAn.NET1
         private void btnLogin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmLogin frmLogin = new frmLogin();
+            frmLogin.Dock = DockStyle.Fill;
             frmLogin.ShowDialog();
         }
 
@@ -54,6 +55,7 @@ namespace DoAn.NET1
             frmChangePass frmChangePass = new frmChangePass();
             frmChangePass.TopLevel = false;
             frmChangePass.AutoScroll = true;
+            frmChangePass.Dock = DockStyle.Top;
             DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
             xt.Controls.Add(frmChangePass);
             frmChangePass.Show();
@@ -100,12 +102,12 @@ namespace DoAn.NET1
             frmThongTinSV frmThongTinSV = new frmThongTinSV();
             frmThongTinSV.TopLevel = false;
             frmThongTinSV.AutoScroll = true;
-            frmThongTinSV.Dock = DockStyle.Top;
+            frmThongTinSV.Dock = DockStyle.Fill;
             frmThongTinSV.Show();
-            frmSInhVien frmSInhVien = new frmSInhVien();
+            frmSinhVien frmSInhVien = new frmSinhVien();
             frmSInhVien.TopLevel = false;
             frmSInhVien.AutoScroll = true;
-            frmSInhVien.Dock = DockStyle.Bottom;
+            frmSInhVien.Dock = DockStyle.Top;
             frmSInhVien.Show();
             DevExpress.XtraTab.XtraTabPage sv = new DevExpress.XtraTab.XtraTabPage();
             Panel panel = new Panel();
@@ -118,13 +120,23 @@ namespace DoAn.NET1
 
         private void btnDangKiHP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmDangKiHocPhan frmDangKiHP = new frmDangKiHocPhan();
-            frmDangKiHP.TopLevel = false;
-            frmDangKiHP.AutoScroll = true;
-            DevExpress.XtraTab.XtraTabPage hp = new DevExpress.XtraTab.XtraTabPage();
-            hp.Controls.Add(frmDangKiHP);
-            frmDangKiHP.Show();
-            tabHienThi.TabPages.Add(hp);
+            frmDangKiHocPhan frmDangKiHocPhan = new frmDangKiHocPhan();
+            frmDangKiHocPhan.TopLevel = false;
+            frmDangKiHocPhan.AutoScroll = true;
+            frmDangKiHocPhan.Dock = DockStyle.Left;
+            frmDangKiHocPhan.Show();
+            frmChucNangDKHP frmChucNangDKHP = new frmChucNangDKHP();
+            frmChucNangDKHP.TopLevel = false;
+            frmChucNangDKHP.AutoScroll = true;
+            frmChucNangDKHP.Dock = DockStyle.Fill;
+            frmChucNangDKHP.Show();
+            DevExpress.XtraTab.XtraTabPage cn = new DevExpress.XtraTab.XtraTabPage();
+            Panel p = new Panel();
+            p.Dock = DockStyle.Fill;
+            p.Controls.Add(frmChucNangDKHP);
+            p.Controls.Add(frmDangKiHocPhan);
+            cn.Controls.Add(p);
+            tabHienThi.TabPages.Add(cn);
         }
 
         private void btnBangDiem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -132,11 +144,77 @@ namespace DoAn.NET1
             frmBangDiem frmBangDiem= new frmBangDiem();
             frmBangDiem.TopLevel = false;
             frmBangDiem.AutoScroll = true;
-            DevExpress.XtraTab.XtraTabPage bd = new DevExpress.XtraTab.XtraTabPage();
-            bd.Controls.Add(frmBangDiem);
+            frmBangDiem.Dock = DockStyle.Left;
             frmBangDiem.Show();
-            tabHienThi.TabPages.Add(bd);
+            frmChucNangBangDiem frmChucNangBangDiem = new frmChucNangBangDiem();
+            frmChucNangBangDiem.TopLevel = false;
+            frmChucNangBangDiem.AutoScroll = true;
+            frmChucNangBangDiem.Dock = DockStyle.Fill;
+            frmChucNangBangDiem.Show();
+            DevExpress.XtraTab.XtraTabPage cn = new DevExpress.XtraTab.XtraTabPage();
+            Panel p = new Panel();
+            p.Dock = DockStyle.Fill;
+            p.Controls.Add(frmChucNangBangDiem);
+            p.Controls.Add(frmBangDiem);
+            cn.Controls.Add(p);
+            tabHienThi.TabPages.Add(cn);
         }
 
+        private void btnKhoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmKhoa frmKhoa = new frmKhoa();
+            frmKhoa.TopLevel = false;
+            frmKhoa.AutoScroll = true;
+            frmKhoa.Dock = DockStyle.Left;
+            frmKhoa.Show();
+            frmChucNangKhoa frmChucNangKhoa = new frmChucNangKhoa();
+            frmChucNangKhoa.TopLevel = false;
+            frmChucNangKhoa.AutoScroll = true;
+            frmChucNangKhoa.Dock = DockStyle.Fill;
+            frmChucNangKhoa.Show();
+            DevExpress.XtraTab.XtraTabPage cn = new DevExpress.XtraTab.XtraTabPage();
+            Panel p = new Panel();
+            p.Dock = DockStyle.Fill;
+            p.Controls.Add(frmChucNangKhoa);
+            p.Controls.Add(frmKhoa);
+            cn.Controls.Add(p);
+            tabHienThi.TabPages.Add(cn);
+        }
+
+        private void btnLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLop frmLop = new frmLop();
+            frmLop.TopLevel = false;
+            frmLop.AutoScroll = true;
+            frmLop.Dock = DockStyle.Top;
+            DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
+            xt.Controls.Add(frmLop);
+            frmLop.Show();
+            tabHienThi.TabPages.Add(xt);
+        }
+
+        private void btnSVViPham_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmSInhVienViPham frmSInhVienViPham = new frmSInhVienViPham();
+            frmSInhVienViPham.TopLevel = false;
+            frmSInhVienViPham.AutoScroll = true;
+            frmSInhVienViPham.Dock = DockStyle.Top;
+            DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
+            xt.Controls.Add(frmSInhVienViPham);
+            frmSInhVienViPham.Show();
+            tabHienThi.TabPages.Add(xt);
+        }
+
+        private void btnDiemDanh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDiemDanh frmDiemDanh = new frmDiemDanh();
+            frmDiemDanh.TopLevel = false;
+            frmDiemDanh.AutoScroll = true;
+            
+            DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
+            xt.Controls.Add(frmDiemDanh);
+            frmDiemDanh.Show();
+            tabHienThi.TabPages.Add(xt);
+        }
     }
 }

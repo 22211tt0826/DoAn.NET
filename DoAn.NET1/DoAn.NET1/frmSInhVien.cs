@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DoAn.NET1
 {
-    public partial class frmSInhVien : DevExpress.XtraEditors.XtraForm
+    public partial class frmSinhVien : DevExpress.XtraEditors.XtraForm
     {
-        public frmSInhVien()
+        public frmSinhVien()
         {
             InitializeComponent();
         }

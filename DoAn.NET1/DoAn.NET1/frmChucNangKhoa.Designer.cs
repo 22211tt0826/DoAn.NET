@@ -58,6 +58,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupControl1.Controls.Add(this.txtMaGV);
             this.groupControl1.Controls.Add(this.stbnThoat);
             this.groupControl1.Controls.Add(this.labelControl4);
@@ -82,6 +83,7 @@
             // 
             // txtMaGV
             // 
+            this.txtMaGV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaGV.Location = new System.Drawing.Point(155, 189);
             this.txtMaGV.Name = "txtMaGV";
             this.txtMaGV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -91,6 +93,7 @@
             // 
             // labelControl4
             // 
+            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl4.Location = new System.Drawing.Point(50, 192);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(46, 19);
@@ -99,6 +102,7 @@
             // 
             // txtmaSV
             // 
+            this.txtmaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtmaSV.Enabled = false;
             this.txtmaSV.Location = new System.Drawing.Point(155, 151);
             this.txtmaSV.Name = "txtmaSV";
@@ -107,6 +111,7 @@
             // 
             // labelControl3
             // 
+            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl3.Location = new System.Drawing.Point(50, 154);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(44, 19);
@@ -115,6 +120,7 @@
             // 
             // txtMaKhoa
             // 
+            this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaKhoa.Enabled = false;
             this.txtMaKhoa.Location = new System.Drawing.Point(155, 64);
             this.txtMaKhoa.Name = "txtMaKhoa";
@@ -123,6 +129,7 @@
             // 
             // labelControl10
             // 
+            this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl10.Location = new System.Drawing.Point(50, 67);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(60, 19);
@@ -131,6 +138,7 @@
             // 
             // txtTenKhoa
             // 
+            this.txtTenKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTenKhoa.Enabled = false;
             this.txtTenKhoa.Location = new System.Drawing.Point(155, 106);
             this.txtTenKhoa.Name = "txtTenKhoa";
@@ -139,6 +147,7 @@
             // 
             // textEdit3
             // 
+            this.textEdit3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textEdit3.Location = new System.Drawing.Point(178, -34);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(234, 26);
@@ -146,6 +155,7 @@
             // 
             // LabelControl5
             // 
+            this.LabelControl5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl5.Location = new System.Drawing.Point(577, -27);
             this.LabelControl5.Name = "LabelControl5";
             this.LabelControl5.Size = new System.Drawing.Size(42, 19);
@@ -154,6 +164,7 @@
             // 
             // LabelControl2
             // 
+            this.LabelControl2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl2.Location = new System.Drawing.Point(50, 109);
             this.LabelControl2.Name = "LabelControl2";
             this.LabelControl2.Size = new System.Drawing.Size(67, 19);
@@ -162,6 +173,7 @@
             // 
             // LabelControl1
             // 
+            this.LabelControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl1.Location = new System.Drawing.Point(86, -31);
             this.LabelControl1.Name = "LabelControl1";
             this.LabelControl1.Size = new System.Drawing.Size(46, 19);
@@ -170,6 +182,7 @@
             // 
             // TextEdit4
             // 
+            this.TextEdit4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextEdit4.Location = new System.Drawing.Point(639, -30);
             this.TextEdit4.Name = "TextEdit4";
             this.TextEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -179,6 +192,7 @@
             // 
             // stbnThoat
             // 
+            this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
             this.stbnThoat.Location = new System.Drawing.Point(636, 146);
             this.stbnThoat.Name = "stbnThoat";
@@ -188,6 +202,7 @@
             // 
             // sbtnXoa
             // 
+            this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
             this.sbtnXoa.Location = new System.Drawing.Point(457, 146);
             this.sbtnXoa.Name = "sbtnXoa";
@@ -197,6 +212,7 @@
             // 
             // stbnCapNhap
             // 
+            this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
             this.stbnCapNhap.Location = new System.Drawing.Point(636, 67);
             this.stbnCapNhap.Name = "stbnCapNhap";
@@ -206,6 +222,7 @@
             // 
             // sbtnThem
             // 
+            this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
             this.sbtnThem.Location = new System.Drawing.Point(457, 67);
             this.sbtnThem.Name = "sbtnThem";
@@ -221,6 +238,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "frmChucNangKhoa";
             this.Text = "frmChucNangKhoa";
+            this.Load += new System.EventHandler(this.frmChucNangKhoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

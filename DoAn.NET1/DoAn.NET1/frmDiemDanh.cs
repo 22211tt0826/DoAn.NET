@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace DoAn.NET1
 {
-    public partial class frmKhoa : DevExpress.XtraEditors.XtraForm
+    public partial class frmDiemDanh : DevExpress.XtraEditors.XtraForm
     {
-        public frmKhoa()
+        public frmDiemDanh()
         {
             InitializeComponent();
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

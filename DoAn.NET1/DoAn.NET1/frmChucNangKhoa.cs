@@ -17,5 +17,10 @@ namespace DoAn.NET1
         {
             InitializeComponent();
         }
+
+        private void frmChucNangKhoa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

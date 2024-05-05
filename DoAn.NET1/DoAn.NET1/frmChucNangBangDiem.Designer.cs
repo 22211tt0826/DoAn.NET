@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChucNangBangDiem));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtDiemTB = new DevExpress.XtraEditors.TextEdit();
+            this.cbMaHP = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtDiemGK = new DevExpress.XtraEditors.TextEdit();
             this.txtDiemCK = new DevExpress.XtraEditors.TextEdit();
@@ -46,21 +48,20 @@
             this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.cbMaHP = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.txtDiemTB = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiemTB.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbMaHP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiemGK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiemCK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaSV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbMaHP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiemTB.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupControl1.Controls.Add(this.txtDiemTB);
             this.groupControl1.Controls.Add(this.cbMaHP);
             this.groupControl1.Controls.Add(this.labelControl10);
@@ -81,8 +82,28 @@
             this.groupControl1.TabIndex = 19;
             this.groupControl1.Text = "Nhập Điểm";
             // 
+            // txtDiemTB
+            // 
+            this.txtDiemTB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDiemTB.Enabled = false;
+            this.txtDiemTB.Location = new System.Drawing.Point(519, 172);
+            this.txtDiemTB.Name = "txtDiemTB";
+            this.txtDiemTB.Size = new System.Drawing.Size(234, 26);
+            this.txtDiemTB.TabIndex = 94;
+            // 
+            // cbMaHP
+            // 
+            this.cbMaHP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbMaHP.Location = new System.Drawing.Point(147, 64);
+            this.cbMaHP.Name = "cbMaHP";
+            this.cbMaHP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbMaHP.Size = new System.Drawing.Size(234, 26);
+            this.cbMaHP.TabIndex = 93;
+            // 
             // labelControl10
             // 
+            this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelControl10.Location = new System.Drawing.Point(49, 67);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(45, 19);
@@ -91,6 +112,7 @@
             // 
             // txtDiemGK
             // 
+            this.txtDiemGK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDiemGK.Enabled = false;
             this.txtDiemGK.Location = new System.Drawing.Point(519, 64);
             this.txtDiemGK.Name = "txtDiemGK";
@@ -99,6 +121,7 @@
             // 
             // txtDiemCK
             // 
+            this.txtDiemCK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDiemCK.Enabled = false;
             this.txtDiemCK.Location = new System.Drawing.Point(519, 121);
             this.txtDiemCK.Name = "txtDiemCK";
@@ -107,6 +130,7 @@
             // 
             // txtMaSV
             // 
+            this.txtMaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaSV.Enabled = false;
             this.txtMaSV.Location = new System.Drawing.Point(147, 117);
             this.txtMaSV.Name = "txtMaSV";
@@ -115,6 +139,7 @@
             // 
             // textEdit3
             // 
+            this.textEdit3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textEdit3.Location = new System.Drawing.Point(178, -34);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(234, 26);
@@ -122,6 +147,7 @@
             // 
             // LabelControl8
             // 
+            this.LabelControl8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl8.Location = new System.Drawing.Point(453, 179);
             this.LabelControl8.Name = "LabelControl8";
             this.LabelControl8.Size = new System.Drawing.Size(61, 19);
@@ -130,6 +156,7 @@
             // 
             // LabelControl7
             // 
+            this.LabelControl7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl7.Location = new System.Drawing.Point(451, 124);
             this.LabelControl7.Name = "LabelControl7";
             this.LabelControl7.Size = new System.Drawing.Size(61, 19);
@@ -138,6 +165,7 @@
             // 
             // LabelControl6
             // 
+            this.LabelControl6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl6.Location = new System.Drawing.Point(451, 67);
             this.LabelControl6.Name = "LabelControl6";
             this.LabelControl6.Size = new System.Drawing.Size(62, 19);
@@ -146,6 +174,7 @@
             // 
             // LabelControl5
             // 
+            this.LabelControl5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl5.Location = new System.Drawing.Point(577, -27);
             this.LabelControl5.Name = "LabelControl5";
             this.LabelControl5.Size = new System.Drawing.Size(42, 19);
@@ -154,6 +183,7 @@
             // 
             // LabelControl2
             // 
+            this.LabelControl2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl2.Location = new System.Drawing.Point(49, 124);
             this.LabelControl2.Name = "LabelControl2";
             this.LabelControl2.Size = new System.Drawing.Size(92, 19);
@@ -162,6 +192,7 @@
             // 
             // LabelControl1
             // 
+            this.LabelControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelControl1.Location = new System.Drawing.Point(86, -31);
             this.LabelControl1.Name = "LabelControl1";
             this.LabelControl1.Size = new System.Drawing.Size(46, 19);
@@ -170,6 +201,7 @@
             // 
             // TextEdit4
             // 
+            this.TextEdit4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextEdit4.Location = new System.Drawing.Point(639, -30);
             this.TextEdit4.Name = "TextEdit4";
             this.TextEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -179,6 +211,7 @@
             // 
             // stbnThoat
             // 
+            this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
             this.stbnThoat.Location = new System.Drawing.Point(608, 308);
             this.stbnThoat.Name = "stbnThoat";
@@ -189,6 +222,7 @@
             // 
             // sbtnXoa
             // 
+            this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
             this.sbtnXoa.Location = new System.Drawing.Point(468, 308);
             this.sbtnXoa.Name = "sbtnXoa";
@@ -199,6 +233,7 @@
             // 
             // stbnCapNhap
             // 
+            this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
             this.stbnCapNhap.Location = new System.Drawing.Point(324, 308);
             this.stbnCapNhap.Name = "stbnCapNhap";
@@ -209,6 +244,7 @@
             // 
             // sbtnThem
             // 
+            this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
             this.sbtnThem.Location = new System.Drawing.Point(183, 308);
             this.sbtnThem.Name = "sbtnThem";
@@ -216,23 +252,6 @@
             this.sbtnThem.TabIndex = 18;
             this.sbtnThem.Text = "Thêm";
             this.sbtnThem.Click += new System.EventHandler(this.sbtnThem_Click);
-            // 
-            // cbMaHP
-            // 
-            this.cbMaHP.Location = new System.Drawing.Point(147, 64);
-            this.cbMaHP.Name = "cbMaHP";
-            this.cbMaHP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbMaHP.Size = new System.Drawing.Size(234, 26);
-            this.cbMaHP.TabIndex = 93;
-            // 
-            // txtDiemTB
-            // 
-            this.txtDiemTB.Enabled = false;
-            this.txtDiemTB.Location = new System.Drawing.Point(519, 172);
-            this.txtDiemTB.Name = "txtDiemTB";
-            this.txtDiemTB.Size = new System.Drawing.Size(234, 26);
-            this.txtDiemTB.TabIndex = 94;
             // 
             // frmChucNangBangDiem
             // 
@@ -249,13 +268,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiemTB.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbMaHP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiemGK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiemCK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaSV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbMaHP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiemTB.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

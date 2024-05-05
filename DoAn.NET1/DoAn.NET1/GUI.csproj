@@ -49,6 +49,9 @@
     <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core.Desktop, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -63,11 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangKiHocPhan.cs">
+    <Compile Include="DTO_TaiKhoan.cs" />
+    <Compile Include="frmDangKiHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangKiHocPhan.Designer.cs">
-      <DependentUpon>DangKiHocPhan.cs</DependentUpon>
+    <Compile Include="frmDangKiHocPhan.Designer.cs">
+      <DependentUpon>frmDangKiHocPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -75,11 +79,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChucNangBangDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChucNangBangDiem.Designer.cs">
+      <DependentUpon>frmChucNangBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChucNangDKHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChucNangDKHP.Designer.cs">
+      <DependentUpon>frmChucNangDKHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChucNangKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChucNangKhoa.Designer.cs">
+      <DependentUpon>frmChucNangKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiemDanh.Designer.cs">
+      <DependentUpon>frmDiemDanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHocBong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmHocBong.Designer.cs">
       <DependentUpon>frmHocBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoa.Designer.cs">
+      <DependentUpon>frmKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLop.Designer.cs">
+      <DependentUpon>frmLop.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThongTinSV.cs">
       <SubType>Form</SubType>
@@ -117,11 +157,11 @@
     <Compile Include="frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSInhVien.cs">
+    <Compile Include="frmSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSInhVien.Designer.cs">
-      <DependentUpon>frmSInhVien.cs</DependentUpon>
+    <Compile Include="frmSinhVien.Designer.cs">
+      <DependentUpon>frmSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,14 +171,38 @@
     <Compile Include="frmGiaoVien.Designer.cs">
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DangKiHocPhan.resx">
-      <DependentUpon>DangKiHocPhan.cs</DependentUpon>
+    <Compile Include="frmSInhVienViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSInhVienViPham.Designer.cs">
+      <DependentUpon>frmSInhVienViPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDangKiHocPhan.resx">
+      <DependentUpon>frmDangKiHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmChucNangBangDiem.resx">
+      <DependentUpon>frmChucNangBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChucNangDKHP.resx">
+      <DependentUpon>frmChucNangDKHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChucNangKhoa.resx">
+      <DependentUpon>frmChucNangKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiemDanh.resx">
+      <DependentUpon>frmDiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHocBong.resx">
       <DependentUpon>frmHocBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoa.resx">
+      <DependentUpon>frmKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLop.resx">
+      <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinSV.resx">
       <DependentUpon>frmThongTinSV.cs</DependentUpon>
@@ -158,8 +222,8 @@
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSInhVien.resx">
-      <DependentUpon>frmSInhVien.cs</DependentUpon>
+    <EmbeddedResource Include="frmSinhVien.resx">
+      <DependentUpon>frmSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -173,6 +237,9 @@
     </Compile>
     <EmbeddedResource Include="frmGiaoVien.resx">
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSInhVienViPham.resx">
+      <DependentUpon>frmSInhVienViPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
