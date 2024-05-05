@@ -261,7 +261,9 @@
             this.textEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.textEdit3.Properties.DisplayFormat.FormatString = "";
+            this.textEdit3.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.textEdit3.Properties.EditFormat.FormatString = "";
+            this.textEdit3.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.textEdit3.Properties.Mask.EditMask = "";
             this.textEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.textEdit3.Size = new System.Drawing.Size(234, 26);
@@ -305,6 +307,7 @@
             this.Controls.Add(this.textEdit4);
             this.Name = "frmSInhVien";
             this.Text = "frmSInhVien";
+            this.Load += new System.EventHandler(this.frmSInhVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();

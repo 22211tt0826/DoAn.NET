@@ -22,5 +22,10 @@ namespace DoAn.NET1
         {
             this.Size = new System.Drawing.Size(770,343);
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

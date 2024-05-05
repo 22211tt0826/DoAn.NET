@@ -33,13 +33,14 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.bbtnXoa = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtnCapNhap = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.bbtnXoa = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtnCapNhap = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtnThem = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
@@ -58,6 +59,7 @@
             this.gridView1});
             this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             this.gridControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gridControl1_MouseClick);
+            this.gridControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gridControl1_MouseDown);
             // 
             // gridView1
             // 
@@ -68,9 +70,26 @@
             // 
             this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.bbtnXoa),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbtnCapNhap)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbtnCapNhap),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbtnThem)});
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
+            // 
+            // bbtnXoa
+            // 
+            this.bbtnXoa.Caption = "Xóa";
+            this.bbtnXoa.Id = 1;
+            this.bbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbtnXoa.ImageOptions.Image")));
+            this.bbtnXoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbtnXoa.ImageOptions.LargeImage")));
+            this.bbtnXoa.Name = "bbtnXoa";
+            // 
+            // bbtnCapNhap
+            // 
+            this.bbtnCapNhap.Caption = "Cập Nhập";
+            this.bbtnCapNhap.Id = 2;
+            this.bbtnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbtnCapNhap.ImageOptions.Image")));
+            this.bbtnCapNhap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbtnCapNhap.ImageOptions.LargeImage")));
+            this.bbtnCapNhap.Name = "bbtnCapNhap";
             // 
             // barManager1
             // 
@@ -81,8 +100,9 @@
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.bbtnXoa,
-            this.bbtnCapNhap});
-            this.barManager1.MaxItemId = 4;
+            this.bbtnCapNhap,
+            this.bbtnThem});
+            this.barManager1.MaxItemId = 5;
             // 
             // barDockControlTop
             // 
@@ -116,21 +136,13 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 769);
             // 
-            // bbtnXoa
+            // bbtnThem
             // 
-            this.bbtnXoa.Caption = "Xóa";
-            this.bbtnXoa.Id = 1;
-            this.bbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.bbtnXoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.bbtnXoa.Name = "bbtnXoa";
-            // 
-            // bbtnCapNhap
-            // 
-            this.bbtnCapNhap.Caption = "Cập Nhập";
-            this.bbtnCapNhap.Id = 2;
-            this.bbtnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbtnCapNhap.ImageOptions.Image")));
-            this.bbtnCapNhap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbtnCapNhap.ImageOptions.LargeImage")));
-            this.bbtnCapNhap.Name = "bbtnCapNhap";
+            this.bbtnThem.Caption = "Thêm";
+            this.bbtnThem.Id = 4;
+            this.bbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.bbtnThem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.bbtnThem.Name = "bbtnThem";
             // 
             // frmBangDiem
             // 
@@ -165,5 +177,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarButtonItem bbtnThem;
     }
 }
