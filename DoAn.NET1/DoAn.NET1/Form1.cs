@@ -76,24 +76,44 @@ namespace DoAn.NET1
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-          frmGiaoVien frmGiaoVien = new frmGiaoVien();
+            frmGiaoVien frmGiaoVien = new frmGiaoVien();
             frmGiaoVien.TopLevel = false;
             frmGiaoVien.AutoScroll = true;
-            DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
-            xt.Controls.Add(frmGiaoVien);
+            frmGiaoVien.Dock = DockStyle.Left;
             frmGiaoVien.Show();
-            tabHienThi.TabPages.Add(xt);
+            frmChuacNangGV frmChuacNang = new frmChuacNangGV();
+            frmChuacNang.TopLevel = false;
+            frmChuacNang.AutoScroll = true;
+            frmChuacNang.Dock = DockStyle.Fill;
+            frmChuacNang.Show();
+            DevExpress.XtraTab.XtraTabPage cn = new DevExpress.XtraTab.XtraTabPage();
+            Panel p = new Panel();
+            p.Dock = DockStyle.Fill;
+            p.Controls.Add(frmChuacNang);
+            p.Controls.Add(frmGiaoVien);
+            cn.Controls.Add(p);
+            tabHienThi.TabPages.Add(cn);
         }
 <<<<<<< HEAD
 
         private void btnSinhVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            frmThongTinSV frmThongTinSV = new frmThongTinSV();
+            frmThongTinSV.TopLevel = false;
+            frmThongTinSV.AutoScroll = true;
+            frmThongTinSV.Dock = DockStyle.Top;
+            frmThongTinSV.Show();
             frmSInhVien frmSInhVien = new frmSInhVien();
             frmSInhVien.TopLevel = false;
             frmSInhVien.AutoScroll = true;
-            DevExpress.XtraTab.XtraTabPage sv = new DevExpress.XtraTab.XtraTabPage();
-            sv.Controls.Add(frmSInhVien);
+            frmSInhVien.Dock = DockStyle.Bottom;
             frmSInhVien.Show();
+            DevExpress.XtraTab.XtraTabPage sv = new DevExpress.XtraTab.XtraTabPage();
+            Panel panel = new Panel();
+            panel.Dock = DockStyle.Fill;
+            panel.Controls.Add(frmThongTinSV);
+            panel.Controls.Add(frmSInhVien);
+            sv.Controls.Add(panel);
             tabHienThi.TabPages.Add(sv);
         }
 

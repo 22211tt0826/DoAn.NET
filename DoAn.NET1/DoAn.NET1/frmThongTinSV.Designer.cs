@@ -1,6 +1,6 @@
 ﻿namespace DoAn.NET1
 {
-    partial class frmGiaoVien
+    partial class frmThongTinSV
     {
         /// <summary>
         /// Required designer variable.
@@ -36,32 +36,29 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(938, 500);
+            this.gridControl1.Size = new System.Drawing.Size(770, 253);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // frmGiaoVien
+            // frmThongTinSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 500);
+            this.ClientSize = new System.Drawing.Size(770, 253);
             this.Controls.Add(this.gridControl1);
-            this.Name = "frmGiaoVien";
-            this.Text = "Danh Sách Sinh Viên";
-            this.Load += new System.EventHandler(this.frmGiaoVien_Load);
+            this.Name = "frmThongTinSV";
+            this.Text = "formThongTinSV";
+            this.Load += new System.EventHandler(this.frmThongTinSV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

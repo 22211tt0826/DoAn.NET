@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DoAn.NET1
 {
-    public partial class frmThongTinGV : DevExpress.XtraEditors.XtraForm
+    public partial class frmHocBong : DevExpress.XtraEditors.XtraForm
     {
-        public frmThongTinGV()
+        public frmHocBong()
         {
             InitializeComponent();
         }

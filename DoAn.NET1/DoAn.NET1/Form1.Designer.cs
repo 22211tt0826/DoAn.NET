@@ -157,7 +157,7 @@
 =======
 >>>>>>> origin/branch
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "RibbonPageGroup2";
+            this.ribbonPageGroup10.Text = "Hiển Thị";
             // 
             // barButtonItem1
             // 
@@ -195,7 +195,7 @@
             // ribbonPageGroup11
             // 
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "RibbonPageGroup6";
+            this.ribbonPageGroup11.Text = "Report";
             // 
             // ribbonPage7
             // 

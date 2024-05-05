@@ -73,6 +73,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThongTinSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinSV.Designer.cs">
+      <DependentUpon>frmThongTinSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBangDiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="frmChangePass.Designer.cs">
       <DependentUpon>frmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChuacNangGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChuacNangGV.Designer.cs">
+      <DependentUpon>frmChuacNangGV.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -104,6 +116,7 @@
     <Compile Include="frmSInhVien.Designer.cs">
       <DependentUpon>frmSInhVien.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 =======
 >>>>>>> origin/branch
     <Compile Include="frmThongTinGV.cs">
@@ -112,6 +125,8 @@
     <Compile Include="frmThongTinGV.Designer.cs">
       <DependentUpon>frmThongTinGV.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> thminh
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmGiaoVien.cs">
@@ -129,11 +144,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTinSV.resx">
+      <DependentUpon>frmThongTinSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBangDiem.resx">
       <DependentUpon>frmBangDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChangePass.resx">
       <DependentUpon>frmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChuacNangGV.resx">
+      <DependentUpon>frmChuacNangGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -145,11 +166,14 @@
     <EmbeddedResource Include="frmSInhVien.resx">
       <DependentUpon>frmSInhVien.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
 =======
 >>>>>>> origin/branch
     <EmbeddedResource Include="frmThongTinGV.resx">
       <DependentUpon>frmThongTinGV.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> thminh
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

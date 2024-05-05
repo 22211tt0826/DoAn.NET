@@ -11,26 +11,16 @@ using System.Windows.Forms;
 
 namespace DoAn.NET1
 {
-    public partial class frmGiaoVien : DevExpress.XtraEditors.XtraForm
+    public partial class frmThongTinSV : DevExpress.XtraEditors.XtraForm
     {
-        public frmGiaoVien()
+        public frmThongTinSV()
         {
             InitializeComponent();
         }
 
-        private void sbtnThem_Click(object sender, EventArgs e)
+        private void frmThongTinSV_Load(object sender, EventArgs e)
         {
-          
-        }
-
-        private void frmGiaoVien_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-
+            this.Size = new System.Drawing.Size(770,343);
         }
     }
 }

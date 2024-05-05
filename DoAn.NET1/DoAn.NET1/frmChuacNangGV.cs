@@ -11,24 +11,19 @@ using System.Windows.Forms;
 
 namespace DoAn.NET1
 {
-    public partial class frmGiaoVien : DevExpress.XtraEditors.XtraForm
+    public partial class frmChuacNangGV : DevExpress.XtraEditors.XtraForm
     {
-        public frmGiaoVien()
+        public frmChuacNangGV()
         {
             InitializeComponent();
         }
 
-        private void sbtnThem_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void frmGiaoVien_Load(object sender, EventArgs e)
+        private void txtNgaySinh_EditValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void gridControl1_Click(object sender, EventArgs e)
+        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
