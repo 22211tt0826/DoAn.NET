@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,16 @@ namespace DoAn.NET1
         public frmBangDiem()
         {
             InitializeComponent();
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+           
         }
     }
 }

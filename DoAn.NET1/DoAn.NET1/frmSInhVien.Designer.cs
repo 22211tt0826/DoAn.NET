@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSInhVien));
             this.LabelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -39,24 +40,27 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.TextEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.btnNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.stbnThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.DateEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelControl1
@@ -172,20 +176,6 @@
             this.textEdit2.Size = new System.Drawing.Size(234, 26);
             this.textEdit2.TabIndex = 59;
             // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(203, 157);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(234, 26);
-            this.textEdit3.TabIndex = 61;
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(203, 109);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(234, 26);
-            this.textEdit4.TabIndex = 60;
-            // 
             // textEdit6
             // 
             this.textEdit6.Location = new System.Drawing.Point(723, 57);
@@ -207,13 +197,6 @@
             this.textEdit8.Size = new System.Drawing.Size(234, 26);
             this.textEdit8.TabIndex = 62;
             // 
-            // textEdit9
-            // 
-            this.textEdit9.Location = new System.Drawing.Point(723, 154);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Size = new System.Drawing.Size(234, 26);
-            this.textEdit9.TabIndex = 66;
-            // 
             // comboBoxEdit1
             // 
             this.comboBoxEdit1.Location = new System.Drawing.Point(723, 103);
@@ -223,36 +206,90 @@
             this.comboBoxEdit1.Size = new System.Drawing.Size(234, 26);
             this.comboBoxEdit1.TabIndex = 67;
             // 
-            // btnNhap
+            // stbnThoat
             // 
-            this.btnNhap.Location = new System.Drawing.Point(377, 275);
-            this.btnNhap.Name = "btnNhap";
-            this.btnNhap.Size = new System.Drawing.Size(112, 34);
-            this.btnNhap.TabIndex = 68;
-            this.btnNhap.Text = "Nhập";
+            this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
+            this.stbnThoat.Location = new System.Drawing.Point(723, 360);
+            this.stbnThoat.Name = "stbnThoat";
+            this.stbnThoat.Size = new System.Drawing.Size(112, 34);
+            this.stbnThoat.TabIndex = 69;
+            this.stbnThoat.Text = "Thoát";
             // 
-            // btnThoat
+            // sbtnXoa
             // 
-            this.btnThoat.Location = new System.Drawing.Point(519, 275);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(112, 34);
-            this.btnThoat.TabIndex = 69;
-            this.btnThoat.Text = "Thoát";
+            this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
+            this.sbtnXoa.Location = new System.Drawing.Point(723, 280);
+            this.sbtnXoa.Name = "sbtnXoa";
+            this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
+            this.sbtnXoa.TabIndex = 70;
+            this.sbtnXoa.Text = "Xóa ";
+            // 
+            // stbnCapNhap
+            // 
+            this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
+            this.stbnCapNhap.Location = new System.Drawing.Point(325, 360);
+            this.stbnCapNhap.Name = "stbnCapNhap";
+            this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
+            this.stbnCapNhap.TabIndex = 71;
+            this.stbnCapNhap.Text = "Cập Nhập";
+            // 
+            // sbtnThem
+            // 
+            this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
+            this.sbtnThem.Location = new System.Drawing.Point(325, 280);
+            this.sbtnThem.Name = "sbtnThem";
+            this.sbtnThem.Size = new System.Drawing.Size(112, 34);
+            this.sbtnThem.TabIndex = 72;
+            this.sbtnThem.Text = "Thêm";
+            // 
+            // comboBoxEdit2
+            // 
+            this.comboBoxEdit2.Location = new System.Drawing.Point(723, 157);
+            this.comboBoxEdit2.Name = "comboBoxEdit2";
+            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit2.Size = new System.Drawing.Size(234, 26);
+            this.comboBoxEdit2.TabIndex = 73;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.EditValue = null;
+            this.textEdit3.Location = new System.Drawing.Point(203, 157);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit3.Properties.DisplayFormat.FormatString = "";
+            this.textEdit3.Properties.EditFormat.FormatString = "";
+            this.textEdit3.Properties.Mask.EditMask = "";
+            this.textEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.textEdit3.Size = new System.Drawing.Size(234, 26);
+            this.textEdit3.TabIndex = 61;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Location = new System.Drawing.Point(203, 109);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit4.Size = new System.Drawing.Size(234, 26);
+            this.textEdit4.TabIndex = 60;
             // 
             // frmSInhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 360);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnNhap);
+            this.ClientSize = new System.Drawing.Size(998, 403);
+            this.Controls.Add(this.comboBoxEdit2);
+            this.Controls.Add(this.stbnThoat);
+            this.Controls.Add(this.sbtnXoa);
+            this.Controls.Add(this.stbnCapNhap);
+            this.Controls.Add(this.sbtnThem);
             this.Controls.Add(this.comboBoxEdit1);
-            this.Controls.Add(this.textEdit9);
             this.Controls.Add(this.textEdit6);
             this.Controls.Add(this.textEdit7);
             this.Controls.Add(this.textEdit8);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textEdit4);
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.TextEdit1);
             this.Controls.Add(this.labelControl9);
@@ -264,17 +301,20 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.LabelControl1);
+            this.Controls.Add(this.textEdit3);
+            this.Controls.Add(this.textEdit4);
             this.Name = "frmSInhVien";
             this.Text = "frmSInhVien";
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,14 +333,16 @@
         internal DevExpress.XtraEditors.LabelControl labelControl9;
         internal DevExpress.XtraEditors.TextEdit TextEdit1;
         internal DevExpress.XtraEditors.TextEdit textEdit2;
-        internal DevExpress.XtraEditors.TextEdit textEdit3;
-        internal DevExpress.XtraEditors.TextEdit textEdit4;
         internal DevExpress.XtraEditors.TextEdit textEdit6;
         internal DevExpress.XtraEditors.TextEdit textEdit7;
         internal DevExpress.XtraEditors.TextEdit textEdit8;
-        internal DevExpress.XtraEditors.TextEdit textEdit9;
         internal DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
-        internal DevExpress.XtraEditors.SimpleButton btnNhap;
-        internal DevExpress.XtraEditors.SimpleButton btnThoat;
+        private DevExpress.XtraEditors.SimpleButton stbnThoat;
+        private DevExpress.XtraEditors.SimpleButton sbtnXoa;
+        private DevExpress.XtraEditors.SimpleButton stbnCapNhap;
+        private DevExpress.XtraEditors.SimpleButton sbtnThem;
+        internal DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
+        private DevExpress.XtraEditors.DateEdit textEdit3;
+        private DevExpress.XtraEditors.ComboBoxEdit textEdit4;
     }
 }
