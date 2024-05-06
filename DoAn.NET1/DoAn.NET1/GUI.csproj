@@ -66,7 +66,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO_TaiKhoan.cs" />
+    <Compile Include="DataConnect\DataConnect.cs" />
+    <Compile Include="DataConnect\itConnect.cs" />
+    <Compile Include="frmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnect.Designer.cs">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangKiHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +121,12 @@
     </Compile>
     <Compile Include="frmKhoa.Designer.cs">
       <DependentUpon>frmKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLop.cs">
       <SubType>Form</SubType>
@@ -177,6 +190,9 @@
     <Compile Include="frmSInhVienViPham.Designer.cs">
       <DependentUpon>frmSInhVienViPham.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmConnect.resx">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangKiHocPhan.resx">
       <DependentUpon>frmDangKiHocPhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhoa.resx">
       <DependentUpon>frmKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>

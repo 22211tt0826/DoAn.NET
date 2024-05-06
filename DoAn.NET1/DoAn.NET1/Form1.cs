@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,9 +14,11 @@ namespace DoAn.NET1
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public frmMain()
+          private  SqlConnection conn { get; set; }
+        public frmMain(SqlConnection conn)
         {
             InitializeComponent();
+            this.conn = conn;
         }
         public void skins()
         {
