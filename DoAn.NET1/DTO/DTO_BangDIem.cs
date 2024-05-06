@@ -6,7 +6,34 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class DTO_BangDIem
+    public class DTO_BangDIem
     {
+        private string maHP;
+        private string maSV;
+        private string tenHK;
+        private float diemGK;
+        private float diemCK;
+        private float diemTB;
+
+        public DTO_BangDIem(string maHP, string maSV, string tenHK, float diemGK, float diemCK, float diemTB)
+        {
+            this.MaHP = maHP;
+            this.MaSV = maSV;
+            this.TenHK = tenHK;
+            this.DiemGK = diemGK;
+            this.DiemCK = diemCK;
+            this.DiemTB = diemTB;
+        }
+        public DTO_BangDIem()
+        {
+           
+        }
+
+        public string MaHP { get => maHP; set => maHP = value; }
+        public string MaSV { get => maSV; set => maSV = value; }
+        public string TenHK { get => tenHK; set => tenHK = value; }
+        public float DiemGK { get => diemGK; set => diemGK = value; }
+        public float DiemCK { get => diemCK; set => diemCK = value; }
+        public float DiemTB { get => diemTB; set => diemTB = value; }
     }
 }

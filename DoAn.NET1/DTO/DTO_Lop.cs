@@ -6,25 +6,27 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class DTO_Khoa
+    public class DTO_Lop
     {
+        private string tenLop;
         private string maKhoa;
-        private string tenKhoa;
         private string maSV;
         private string maGV;
 
-        public DTO_Khoa(string maKhoa, string tenKhoa, string maSV, string maGV)
+        public DTO_Lop(string tenLop, string maKhoa, string maSV, string maGV)
         {
+            this.TenLop = tenLop;
             this.MaKhoa = maKhoa;
-            this.TenKhoa = tenKhoa;
             this.MaSV = maSV;
             this.MaGV = maGV;
         }
-        public DTO_Khoa(){
+        public DTO_Lop()
+        {
+           
+        }
 
-            }
+        public string TenLop { get => tenLop; set => tenLop = value; }
         public string MaKhoa { get => maKhoa; set => maKhoa = value; }
-        public string TenKhoa { get => tenKhoa; set => tenKhoa = value; }
         public string MaSV { get => maSV; set => maSV = value; }
         public string MaGV { get => maGV; set => maGV = value; }
     }
