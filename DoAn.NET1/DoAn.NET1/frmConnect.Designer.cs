@@ -100,6 +100,7 @@
             this.btnKiemTra.TabIndex = 5;
             this.btnKiemTra.Text = "kiểm tra";
             this.btnKiemTra.UseVisualStyleBackColor = false;
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click_1);
             // 
             // txbTenNguoiDung
             // 
@@ -123,6 +124,7 @@
             this.btnKetNoi.TabIndex = 6;
             this.btnKetNoi.Text = "Kết nối";
             this.btnKetNoi.UseVisualStyleBackColor = false;
+            this.btnKetNoi.Click += new System.EventHandler(this.btnKetNoi_Click_1);
             // 
             // txbMatKhau
             // 
@@ -215,6 +217,8 @@
             // 
             // frmConnect
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 662);

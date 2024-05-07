@@ -20,11 +20,11 @@ namespace DoAn.NET1
             InitializeComponent();
         }
 
-        private void frmConnect_Load(object sender, EventArgs e)
+        public void frmConnect_Load(object sender, EventArgs e)
         {
             cbXacThuc.Text = "Windows authentication";
             loadform();
-            txbCSDL.Text = "QL_NhaHang";
+            txbCSDL.Text = "QLSV";
         }
         void loadform()
         {
@@ -45,14 +45,28 @@ namespace DoAn.NET1
             }
         }
 
-        private void cbXacThuc_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbXacThuc_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadform();
         }
 
-        private void btnKetNoi_Click(object sender, EventArgs e)
+        private void btnKiemTra_Click_1(object sender, EventArgs e)
         {
+            DataConnect.DataConnect conn = new DataConnect.DataConnect(txbTenMayChu.Text, txbCSDL.Text);
+            try
+            {
+                conn.SqlConnectionWindowsAuthentication().Open();
+                MessageBox.Show("Kết nối thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                conn.SqlConnectionWindowsAuthentication().Close();
+            }
+            catch
+            {
+                MessageBox.Show("Kết nối thất bại!", "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void btnKetNoi_Click_1(object sender, EventArgs e)
+        {
             try
             {
                 DataConnect.DataConnect conn = new DataConnect.DataConnect(txbTenMayChu.Text, txbCSDL.Text);
@@ -62,22 +76,6 @@ namespace DoAn.NET1
                 this.Hide();
                 f.ShowDialog();
                 this.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Kết nối thất bại!", "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
-
-        private void btnKiemTra_Click(object sender, EventArgs e)
-        {
-            DataConnect.DataConnect conn = new DataConnect.DataConnect(txbTenMayChu.Text, txbCSDL.Text);
-            try
-            {
-                conn.SqlConnectionWindowsAuthentication().Open();
-                MessageBox.Show("Kết nối thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                conn.SqlConnectionWindowsAuthentication().Close();
             }
             catch
             {
