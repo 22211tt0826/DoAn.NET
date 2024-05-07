@@ -2,6 +2,7 @@
 using DevExpress.Utils.Design;
 using DevExpress.XtraEditors;
 using System;
+using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,7 @@ namespace DoAn.NET1
         }
         void loadform()
         {
-            txbTenMayChu.Text = Environment.MachineName + @"\SQLEXPRESS";
+            txbTenMayChu.Text = Environment.MachineName ;
             if (cbXacThuc.Text == "Windows authentication")
             {
                 lbTen.Enabled = false;

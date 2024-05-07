@@ -30,8 +30,7 @@ namespace DoAn.NET1
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
-            NextForm();
+          
         }
 
         private void imageSlider1_Click(object sender, EventArgs e)
@@ -42,6 +41,12 @@ namespace DoAn.NET1
         private void frmLoad_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            NextForm();
         }
     }
 }

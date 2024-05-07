@@ -47,6 +47,10 @@
             this.imageSlider1.Text = "imageSlider1";
             this.imageSlider1.Click += new System.EventHandler(this.imageSlider1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // frmLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
