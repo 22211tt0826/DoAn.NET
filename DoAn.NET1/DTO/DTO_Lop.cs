@@ -10,15 +10,13 @@ namespace DTO
     {
         private string tenLop;
         private string maKhoa;
-        private string maSV;
-        private string maGV;
 
-        public DTO_Lop(string tenLop, string maKhoa, string maSV, string maGV)
+
+        public DTO_Lop(string tenLop, string maKhoa)
         {
             this.TenLop = tenLop;
             this.MaKhoa = maKhoa;
-            this.MaSV = maSV;
-            this.MaGV = maGV;
+
         }
         public DTO_Lop()
         {
@@ -27,7 +25,5 @@ namespace DTO
 
         public string TenLop { get => tenLop; set => tenLop = value; }
         public string MaKhoa { get => maKhoa; set => maKhoa = value; }
-        public string MaSV { get => maSV; set => maSV = value; }
-        public string MaGV { get => maGV; set => maGV = value; }
     }
 }

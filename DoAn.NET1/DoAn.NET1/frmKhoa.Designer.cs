@@ -59,6 +59,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "frmKhoa";
             this.Text = "frmKhoa";
+            this.Load += new System.EventHandler(this.frmKhoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

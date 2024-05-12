@@ -1,10 +1,19 @@
 CREATE DATABASE QLSV 
 USE QLSV
 
-CREATE TABLE chucVu (
-maCV nvarchar (20) not null,
-tenCV nvarchar (20)
-primary key (maCV)
+SET DATEFORMAT dmy;
+CREATE TABLE GiaoVien (
+maGV nvarchar (20) not null,
+hoTenGV nvarchar (30),
+gioitinh  nvarchar (40),
+ngaySinh date ,
+noiSinh nvarchar (20),
+sDT nvarchar(10) ,
+eMail nvarchar (30),
+tenCV nvarchar(20),
+tenLop nvarchar (20),
+passTK nvarchar (20)
+primary key (maGV),
 )
 CREATE TABLE SinhVien (
 maSV nvarchar (20) not null,
@@ -12,29 +21,14 @@ hoTenSV nvarchar (30),
 gioitinh  nvarchar (40),
 ngaySinh date ,
 noiSinh nvarchar (20),
-sDT int ,
+sDT nvarchar(10) ,
 eMail nvarchar (30),
-maCV nvarchar(20) not null,
-maLop nvarchar (20) not null,
-primary key (maSV) ,
-FOREIGN KEY (maCV) REFERENCES  chucVu(maCV),
-
-)
-CREATE TABLE GiaoVien (
+tenCV nvarchar(20) ,
+tenLop nvarchar (20),
 maGV nvarchar (20) not null,
-hoTenGV nvarchar (30),
-gioitinh  nvarchar (40),
-ngaySinh date ,
-noiSinh nvarchar (20),
-sDT int ,
-eMail nvarchar (30),
-maCV nvarchar(20),
-maSV nvarchar (20) not null,
-maLop nvarchar (20) not null,
-primary key (maGV),
-FOREIGN KEY (maCV) REFERENCES  chucVu(maCV),
-FOREIGN KEY (maSV) REFERENCES  SinhVien(maSV),
-
+passTK nvarchar (20)
+primary key (maSV),
+FOREIGN KEY (maGV) REFERENCES  GiaoVien(maGV)
 )
 CREATE TABLE khoa(
 maKhoa nvarchar (20) not null,
@@ -48,10 +42,10 @@ FOREIGN KEY (maGV) REFERENCES  GiaoVien(maGV)
 CREATE TABLE Lop(
 tenLop nvarchar (20),
 maKhoa nvarchar (20) not null,
-maSV nvarchar (20) not null,
-maGV nvarchar (20) not null,
-PRIMARY KEY (maKhoa,maSV,maGV)
+PRIMARY KEY (maKhoa),
+FOREIGN KEY (maKhoa) REFERENCES  Khoa(maKhoa),
 )
+
 CREATE TABLE hocPhan(
 maHP nvarchar (20) not null,
 tenHP nvarchar (30),
@@ -73,7 +67,10 @@ tenHK nvarchar (10),
 diemGK float ,
 diemCK float ,
 diemTB float,
-PRIMARY KEY (maSV,maHP)
+primary key (maSV,maHP),
+FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
+FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
+
 )
 CREATE TABLE hocBong (
 maHB nvarchar (20)not null ,
@@ -83,14 +80,30 @@ maSV nvarchar (20) not null,
 PRIMARY KEY (maHB),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV)
 )
-CREATE TABLE sinhVienVP(
-noiDungVP nvarchar (20),
-thoiGianSV date ,
+CREATE TABLE BangViPham(
+maVP nvarchar (20) not null,
+noidungVP nvarchar (200),
 maSV nvarchar (20) not null,
 maHP nvarchar (20) not null,
-PRIMARY KEY (maSV,maHP)
+primary key (maVP,maSV),
+FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
+FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
 )
-CREATE TABLE taiKhoan(
-tenTK nvarchar (20),
-passTK nvarchar (20)
+
+CREATE TABLE sinhVienVP(
+maVP nvarchar (20) not null,
+thoiGian date ,
+maSV nvarchar (20) not null,
+primary key (maVP,maSV),
+FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
 )
+CREATE TABLE diemDanh(
+maSV nvarchar (20) not null,
+maHP nvarchar (20) not null,
+sotiet int ,
+thoiGian date,
+primary key (maSV,maHP,thoiGian),
+FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
+FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
+)
+

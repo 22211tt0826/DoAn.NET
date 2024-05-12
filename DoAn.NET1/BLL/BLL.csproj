@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BLL_DKHP.cs" />
+    <Compile Include="BLL_GiaoVien.cs" />
+    <Compile Include="BLL_Khoa.cs" />
+    <Compile Include="BLL_Lop.cs" />
+    <Compile Include="BLL_SinhVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

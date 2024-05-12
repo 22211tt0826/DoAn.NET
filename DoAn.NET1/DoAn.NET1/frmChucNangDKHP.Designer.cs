@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChucNangDKHP));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cbHocKi = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtSoTC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaHP = new DevExpress.XtraEditors.TextEdit();
@@ -50,10 +52,9 @@
             this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.cbHocKi = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbHocKi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoTC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).BeginInit();
@@ -62,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenHP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbHocKi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -91,6 +91,25 @@
             this.groupControl1.Size = new System.Drawing.Size(815, 237);
             this.groupControl1.TabIndex = 24;
             this.groupControl1.Text = "Nhập Thông Tin Học Phần";
+            // 
+            // cbHocKi
+            // 
+            this.cbHocKi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbHocKi.Location = new System.Drawing.Point(155, 189);
+            this.cbHocKi.Name = "cbHocKi";
+            this.cbHocKi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbHocKi.Size = new System.Drawing.Size(234, 26);
+            this.cbHocKi.TabIndex = 99;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelControl4.Location = new System.Drawing.Point(50, 192);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(44, 19);
+            this.labelControl4.TabIndex = 98;
+            this.labelControl4.Text = "Học kì";
             // 
             // txtSoTC
             // 
@@ -245,6 +264,7 @@
             this.stbnThoat.Size = new System.Drawing.Size(112, 34);
             this.stbnThoat.TabIndex = 20;
             this.stbnThoat.Text = "Thoát";
+            this.stbnThoat.Click += new System.EventHandler(this.stbnThoat_Click);
             // 
             // sbtnXoa
             // 
@@ -255,6 +275,7 @@
             this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
             this.sbtnXoa.TabIndex = 21;
             this.sbtnXoa.Text = "Xóa ";
+            this.sbtnXoa.Click += new System.EventHandler(this.sbtnXoa_Click);
             // 
             // stbnCapNhap
             // 
@@ -265,6 +286,7 @@
             this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
             this.stbnCapNhap.TabIndex = 22;
             this.stbnCapNhap.Text = "Cập Nhập";
+            this.stbnCapNhap.Click += new System.EventHandler(this.stbnCapNhap_Click);
             // 
             // sbtnThem
             // 
@@ -275,25 +297,7 @@
             this.sbtnThem.Size = new System.Drawing.Size(112, 34);
             this.sbtnThem.TabIndex = 23;
             this.sbtnThem.Text = "Thêm";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelControl4.Location = new System.Drawing.Point(50, 192);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(44, 19);
-            this.labelControl4.TabIndex = 98;
-            this.labelControl4.Text = "Học kì";
-            // 
-            // cbHocKi
-            // 
-            this.cbHocKi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbHocKi.Location = new System.Drawing.Point(155, 189);
-            this.cbHocKi.Name = "cbHocKi";
-            this.cbHocKi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbHocKi.Size = new System.Drawing.Size(234, 26);
-            this.cbHocKi.TabIndex = 99;
+            this.sbtnThem.Click += new System.EventHandler(this.sbtnThem_Click);
             // 
             // frmChucNangDKHP
             // 
@@ -310,6 +314,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbHocKi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoTC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).EndInit();
@@ -318,7 +323,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenHP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbHocKi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

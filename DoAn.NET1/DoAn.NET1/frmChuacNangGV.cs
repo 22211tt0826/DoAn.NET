@@ -1,4 +1,7 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.Data.Linq.Helpers;
+using DevExpress.XtraEditors;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +20,9 @@ namespace DoAn.NET1
         {
             InitializeComponent();
         }
+        private BLL_GiaoVien svs = new BLL_GiaoVien();
+
+        private frmGiaoVien Gv;
 
         private void txtNgaySinh_EditValueChanged(object sender, EventArgs e)
         {
@@ -26,6 +32,78 @@ namespace DoAn.NET1
         private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmChuacNangGV_Load(object sender, EventArgs e)
+        {
+            Gv = new frmGiaoVien();
+        }
+
+        private void sbtnThem_Click(object sender, EventArgs e)
+        {
+            DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text,  null);
+            if (sv.MaGV != string.Empty)
+            {
+                IQueryable temp = svs.TimGV(txtmaGV.Text);
+                if (temp.Count() == 0)
+                {
+                    svs.ThemGV(sv);
+                    txtmaGV.Text = string.Empty;
+                    txtHoTen.Text = string.Empty;
+                    cbGioiTinh.Text = string.Empty;
+                    txtNgaySinh.DateTime = DateTime.Now;
+                    txtSDT.Text = string.Empty;
+                    txtEmail.Text = string.Empty;
+                    cbLop.Text = string.Empty;
+                    cbChucVu.Text = string.Empty;
+                    Gv.LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("MGV đã có trong dssv!", "Thông báo",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("MGV không hợp lệ!", "Thông báo",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Warning);
+            }
+
+
+        }
+
+        private void stbnCapNhap_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show($"Bạn có chắc muốn sửa ttsv -{txtmaGV.Text}- không?", "Thông báo",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text, null);
+                svs.SuaGV(sv);
+            }
+        }
+
+        private void sbtnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show($"Bạn có chắc muốn xóa sv -{txtmaGV.Text}- không?", "Thông báo",
+             MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                svs.XoaGV(txtmaGV.Text);
+
+            }
+        }
+
+        private void stbnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

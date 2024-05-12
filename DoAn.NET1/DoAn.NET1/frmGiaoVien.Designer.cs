@@ -60,7 +60,7 @@
             this.ClientSize = new System.Drawing.Size(938, 500);
             this.Controls.Add(this.gridControl1);
             this.Name = "frmGiaoVien";
-            this.Text = "Danh Sách Sinh Viên";
+            this.Text = "db";
             this.Load += new System.EventHandler(this.frmGiaoVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

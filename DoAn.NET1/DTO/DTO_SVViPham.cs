@@ -8,25 +8,25 @@ namespace DTO
 {
     public class DTO_SVViPham
     {
-        private string noiDungVP;
-        private string thoiGianSV;
+        private string maVP;
+        private DateTime thoiGian;
         private string maSV;
-        private string maHP;
 
-        public DTO_SVViPham(string noiDungVP, string thoiGianSV, string maSV, string maHP)
-        {
-            this.noiDungVP = noiDungVP;
-            this.thoiGianSV = thoiGianSV;
-            this.maSV = maSV;
-            this.maHP = maHP;
-        }
+     
         public DTO_SVViPham()
         {
 
         }
-        public string NoiDungVP { get => noiDungVP; set => noiDungVP = value; }
-        public string ThoiGianSV { get => thoiGianSV; set => thoiGianSV = value; }
+
+        public DTO_SVViPham(string maVP, DateTime thoiGian, string maSV)
+        {
+            this.maVP = maVP;
+            this.thoiGian = thoiGian;
+            this.maSV = maSV;
+        }
+
+        public string MaVP { get => maVP; set => maVP = value; }
+        public DateTime ThoiGian { get => thoiGian; set => thoiGian = value; }
         public string MaSV { get => maSV; set => maSV = value; }
-        public string MaHP { get => maHP; set => maHP = value; }
     }
 }

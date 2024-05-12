@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,25 @@ namespace DoAn.NET1
 {
     public partial class frmKhoa : DevExpress.XtraEditors.XtraForm
     {
+        BLL_Khoa kh;
+
         public frmKhoa()
         {
             InitializeComponent();
         }
-
+        public void Load_Khoa()
+        {
+            kh = new BLL_Khoa();
+            gridControl1.DataSource = kh.layDSKhoa();
+        }
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmKhoa_Load(object sender, EventArgs e)
+        {
+            Load_Khoa();
         }
     }
 }

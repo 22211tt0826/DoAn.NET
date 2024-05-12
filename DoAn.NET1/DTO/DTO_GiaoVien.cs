@@ -11,15 +11,20 @@ namespace DTO
         private string maGV;
         private string hoTenGV;
         private string gioitinh;
-        private DateTime  ngaySinh;
+        private DateTime ngaySinh;
         private string noiSinh;
-         private int sDT;
+        private string sDT;
         private string eMail;
-        private string maCV;
-        private string maSV;
+        private string tenCV;
         private string maLop;
+        private string passTK;
 
-        public DTO_GiaoVien(string maGV, string hoTenGV, string gioitinh, DateTime ngaySinh, string noiSinh, int sDT, string eMail, string maCV, string maSV, string maLop)
+        public DTO_GiaoVien()
+        {
+
+        }
+
+        public DTO_GiaoVien(string maGV, string hoTenGV, string gioitinh, DateTime ngaySinh, string noiSinh, string sDT, string eMail, string tenCV, string maLop, string passTK)
         {
             this.maGV = maGV;
             this.hoTenGV = hoTenGV;
@@ -28,13 +33,9 @@ namespace DTO
             this.noiSinh = noiSinh;
             this.sDT = sDT;
             this.eMail = eMail;
-            this.maCV = maCV;
-            this.maSV = maSV;
+            this.tenCV = tenCV;
             this.maLop = maLop;
-        }
-        public DTO_GiaoVien()
-        {
-           
+            this.passTK = passTK;
         }
 
         public string MaGV { get => maGV; set => maGV = value; }
@@ -42,10 +43,10 @@ namespace DTO
         public string Gioitinh { get => gioitinh; set => gioitinh = value; }
         public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }
         public string NoiSinh { get => noiSinh; set => noiSinh = value; }
-        public int SDT { get => sDT; set => sDT = value; }
+        public string SDT { get => sDT; set => sDT = value; }
         public string EMail { get => eMail; set => eMail = value; }
-        public string MaCV { get => maCV; set => maCV = value; }
-        public string MaSV { get => maSV; set => maSV = value; }
+        public string TenCV { get => tenCV; set => tenCV = value; }
         public string MaLop { get => maLop; set => maLop = value; }
+        public string PassTK { get => passTK; set => passTK = value; }
     }
 }

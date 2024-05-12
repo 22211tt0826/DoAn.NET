@@ -68,6 +68,12 @@
   <ItemGroup>
     <Compile Include="DataConnect\DataConnect.cs" />
     <Compile Include="DataConnect\itConnect.cs" />
+    <Compile Include="frmBangVP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBangVP.Designer.cs">
+      <DependentUpon>frmBangVP.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConnect.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     <Compile Include="frmSInhVienViPham.Designer.cs">
       <DependentUpon>frmSInhVienViPham.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmBangVP.resx">
+      <DependentUpon>frmBangVP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConnect.resx">
       <DependentUpon>frmConnect.cs</DependentUpon>
     </EmbeddedResource>

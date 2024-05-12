@@ -31,9 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChucNangKhoa));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtMaGV = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.stbnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.txtmaSV = new DevExpress.XtraEditors.TextEdit();
+            this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
             this.txtMaKhoa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenKhoa = new DevExpress.XtraEditors.TextEdit();
@@ -42,10 +46,6 @@
             this.LabelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.LabelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TextEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.stbnThoat = new DevExpress.XtraEditors.SimpleButton();
-            this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaGV.Properties)).BeginInit();
@@ -80,6 +80,7 @@
             this.groupControl1.Size = new System.Drawing.Size(815, 237);
             this.groupControl1.TabIndex = 29;
             this.groupControl1.Text = "Nhập Thông Tin Khoa";
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
             // txtMaGV
             // 
@@ -91,6 +92,17 @@
             this.txtMaGV.Size = new System.Drawing.Size(234, 26);
             this.txtMaGV.TabIndex = 99;
             // 
+            // stbnThoat
+            // 
+            this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
+            this.stbnThoat.Location = new System.Drawing.Point(636, 146);
+            this.stbnThoat.Name = "stbnThoat";
+            this.stbnThoat.Size = new System.Drawing.Size(112, 34);
+            this.stbnThoat.TabIndex = 25;
+            this.stbnThoat.Text = "Thoát";
+            this.stbnThoat.Click += new System.EventHandler(this.stbnThoat_Click);
+            // 
             // labelControl4
             // 
             this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -100,14 +112,35 @@
             this.labelControl4.TabIndex = 98;
             this.labelControl4.Text = "Mã GV";
             // 
+            // sbtnXoa
+            // 
+            this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
+            this.sbtnXoa.Location = new System.Drawing.Point(457, 146);
+            this.sbtnXoa.Name = "sbtnXoa";
+            this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
+            this.sbtnXoa.TabIndex = 26;
+            this.sbtnXoa.Text = "Xóa ";
+            this.sbtnXoa.Click += new System.EventHandler(this.sbtnXoa_Click);
+            // 
             // txtmaSV
             // 
             this.txtmaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmaSV.Enabled = false;
             this.txtmaSV.Location = new System.Drawing.Point(155, 151);
             this.txtmaSV.Name = "txtmaSV";
             this.txtmaSV.Size = new System.Drawing.Size(234, 26);
             this.txtmaSV.TabIndex = 97;
+            // 
+            // stbnCapNhap
+            // 
+            this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
+            this.stbnCapNhap.Location = new System.Drawing.Point(636, 67);
+            this.stbnCapNhap.Name = "stbnCapNhap";
+            this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
+            this.stbnCapNhap.TabIndex = 27;
+            this.stbnCapNhap.Text = "Cập Nhập";
+            this.stbnCapNhap.Click += new System.EventHandler(this.stbnCapNhap_Click);
             // 
             // labelControl3
             // 
@@ -118,10 +151,20 @@
             this.labelControl3.TabIndex = 96;
             this.labelControl3.Text = "Mã SV";
             // 
+            // sbtnThem
+            // 
+            this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
+            this.sbtnThem.Location = new System.Drawing.Point(457, 67);
+            this.sbtnThem.Name = "sbtnThem";
+            this.sbtnThem.Size = new System.Drawing.Size(112, 34);
+            this.sbtnThem.TabIndex = 28;
+            this.sbtnThem.Text = "Thêm";
+            this.sbtnThem.Click += new System.EventHandler(this.sbtnThem_Click);
+            // 
             // txtMaKhoa
             // 
             this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaKhoa.Enabled = false;
             this.txtMaKhoa.Location = new System.Drawing.Point(155, 64);
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Size = new System.Drawing.Size(234, 26);
@@ -139,7 +182,6 @@
             // txtTenKhoa
             // 
             this.txtTenKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenKhoa.Enabled = false;
             this.txtTenKhoa.Location = new System.Drawing.Point(155, 106);
             this.txtTenKhoa.Name = "txtTenKhoa";
             this.txtTenKhoa.Size = new System.Drawing.Size(234, 26);
@@ -189,46 +231,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.TextEdit4.Size = new System.Drawing.Size(209, 26);
             this.TextEdit4.TabIndex = 82;
-            // 
-            // stbnThoat
-            // 
-            this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
-            this.stbnThoat.Location = new System.Drawing.Point(636, 146);
-            this.stbnThoat.Name = "stbnThoat";
-            this.stbnThoat.Size = new System.Drawing.Size(112, 34);
-            this.stbnThoat.TabIndex = 25;
-            this.stbnThoat.Text = "Thoát";
-            // 
-            // sbtnXoa
-            // 
-            this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
-            this.sbtnXoa.Location = new System.Drawing.Point(457, 146);
-            this.sbtnXoa.Name = "sbtnXoa";
-            this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
-            this.sbtnXoa.TabIndex = 26;
-            this.sbtnXoa.Text = "Xóa ";
-            // 
-            // stbnCapNhap
-            // 
-            this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
-            this.stbnCapNhap.Location = new System.Drawing.Point(636, 67);
-            this.stbnCapNhap.Name = "stbnCapNhap";
-            this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
-            this.stbnCapNhap.TabIndex = 27;
-            this.stbnCapNhap.Text = "Cập Nhập";
-            // 
-            // sbtnThem
-            // 
-            this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
-            this.sbtnThem.Location = new System.Drawing.Point(457, 67);
-            this.sbtnThem.Name = "sbtnThem";
-            this.sbtnThem.Size = new System.Drawing.Size(112, 34);
-            this.sbtnThem.TabIndex = 28;
-            this.sbtnThem.Text = "Thêm";
             // 
             // frmChucNangKhoa
             // 

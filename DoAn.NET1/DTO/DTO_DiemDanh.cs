@@ -9,24 +9,28 @@ namespace DTO
     public class DTO_DiemDanh
     {
         private string maSV;
-        private string hoTenSV;
-        private string tenLop;
+        private string maHP;
+        private int  sotiet;
+        private DateTime thoiGian;
 
-        
+
+
         public DTO_DiemDanh()
         {
             
         }
 
-        public DTO_DiemDanh(string maSV, string hoTenSV, string tenLop)
+        public DTO_DiemDanh(string maSV, string maHP, int sotiet, DateTime thoiGian)
         {
-            this.MaSV = maSV;
-            this.HoTenSV = hoTenSV;
-            this.TenLop = tenLop;
+            this.maSV = maSV;
+            this.maHP = maHP;
+            this.sotiet = sotiet;
+            this.thoiGian = thoiGian;
         }
 
         public string MaSV { get => maSV; set => maSV = value; }
-        public string HoTenSV { get => hoTenSV; set => hoTenSV = value; }
-        public string TenLop { get => tenLop; set => tenLop = value; }
+        public string MaHP { get => maHP; set => maHP = value; }
+        public int Sotiet { get => sotiet; set => sotiet = value; }
+        public DateTime ThoiGian { get => thoiGian; set => thoiGian = value; }
     }
 }

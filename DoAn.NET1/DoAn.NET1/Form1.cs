@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.Utils.Extensions;
+using DevExpress.Utils.Filtering;
 using DevExpress.XtraEditors;
 
 namespace DoAn.NET1
@@ -18,7 +19,7 @@ namespace DoAn.NET1
         public frmMain(SqlConnection conn)
         {
             InitializeComponent();
-            this.conn = conn;
+            //this.conn = conn;
         }
         public void skins()
         {
@@ -74,10 +75,6 @@ namespace DoAn.NET1
             }
         }
 
-        private void tabHienThi_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {

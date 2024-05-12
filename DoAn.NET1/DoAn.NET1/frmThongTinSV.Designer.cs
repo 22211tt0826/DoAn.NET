@@ -44,7 +44,7 @@
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
+            this.gridControl1.Click += new System.EventHandler(this.frmThongTinSV_Load);
             // 
             // gridView1
             // 
@@ -67,8 +67,7 @@
         }
 
         #endregion
-
-        private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        public DevExpress.XtraGrid.GridControl gridControl1;
     }
 }
