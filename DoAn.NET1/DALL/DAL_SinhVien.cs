@@ -21,7 +21,7 @@ namespace DALL
                                 s.maSV,
                                 s.hoTenSV,
                                 s.gioitinh,
-                                s.ngaySinh.Value,
+                                s.ngaySinh,
                                 s.noiSinh,
                                 s.sDT,
                                 s.eMail,

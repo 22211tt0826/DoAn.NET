@@ -14,6 +14,8 @@ namespace DALL
         public IQueryable laydsgv()
         {
             IQueryable sv = from s in db.GiaoViens
+                            join k in db.khoas
+                            on s.maKhoa equals k.maKhoa 
                             select new
                             {
                                 s.maGV,
@@ -23,7 +25,8 @@ namespace DALL
                                 s.sDT,
                                 s.eMail,
                                 s.tenCV,
-                                s.tenLop
+                                s.tenLop,
+                                k.tenKhoa   
                             };
 
             return sv;
@@ -42,6 +45,8 @@ namespace DALL
                     them.eMail = sv.EMail;
                     them.tenCV = sv.TenCV;
                     them.tenLop = sv.MaLop;
+                    them.maKhoa = sv.MaKhoa;
+                    
                 };
                 if (them.maGV != string.Empty)
                 {
@@ -67,6 +72,8 @@ namespace DALL
                 if (id != string.Empty)
                 {
                     var xoa = from s in db.GiaoViens
+                              join k in db.khoas
+                              on s.maKhoa equals k.maKhoa
                               where s.maGV == id
                               select s;
 
@@ -102,7 +109,7 @@ namespace DALL
                     sua.eMail = sv.EMail;
                     sua.tenCV = sv.TenCV;
                     sua.tenLop = sv.MaLop;
-
+                    sua.maKhoa = sv.MaKhoa;
                     db.SubmitChanges();
                     MessageBox.Show("Sửa Thành Công!", "Thông Báo!",
                             MessageBoxButtons.OK,
@@ -129,7 +136,8 @@ namespace DALL
                                   s.sDT,
                                   s.eMail,
                                   s.tenCV,
-                                  s.tenLop
+                                  s.tenLop,
+                                  s.maKhoa
                               };
             return temp;
         }

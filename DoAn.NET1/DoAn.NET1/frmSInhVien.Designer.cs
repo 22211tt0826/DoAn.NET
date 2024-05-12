@@ -213,6 +213,10 @@
             this.cbMaChucVu.Name = "cbMaChucVu";
             this.cbMaChucVu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbMaChucVu.Properties.Items.AddRange(new object[] {
+            "Sinh Viên",
+            "Lớp Phó ",
+            "Lớp Trưởng"});
             this.cbMaChucVu.Size = new System.Drawing.Size(234, 26);
             this.cbMaChucVu.TabIndex = 67;
             // 
@@ -295,6 +299,9 @@
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtGioiTinh.Properties.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
             this.txtGioiTinh.Size = new System.Drawing.Size(234, 26);
             this.txtGioiTinh.TabIndex = 60;
             // 

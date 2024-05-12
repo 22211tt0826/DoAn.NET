@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class DTO_BangViPham
+    public class DTO_BangViPham
     {
         private string maVP;
         private string noidungVP;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class DTO_BangDIem
+    public class DTO_BangDiem
     {
         private string maHP;
         private string maSV;
@@ -15,7 +15,7 @@ namespace DTO
         private float diemCK;
         private float diemTB;
 
-        public DTO_BangDIem(string maHP, string maSV, string tenHK, float diemGK, float diemCK, float diemTB)
+        public DTO_BangDiem(string maHP, string maSV, string tenHK, float diemGK, float diemCK, float diemTB)
         {
             this.MaHP = maHP;
             this.MaSV = maSV;
@@ -24,7 +24,7 @@ namespace DTO
             this.DiemCK = diemCK;
             this.DiemTB = diemTB;
         }
-        public DTO_BangDIem()
+        public DTO_BangDiem()
         {
            
         }

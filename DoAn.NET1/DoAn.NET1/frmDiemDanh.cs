@@ -22,5 +22,10 @@ namespace DoAn.NET1
         {
             
         }
+
+        private void frmDiemDanh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

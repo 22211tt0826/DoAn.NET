@@ -84,5 +84,10 @@ namespace DoAn.NET1
         {
             this.Close();
         }
+
+        private void frmChucNangDKHP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

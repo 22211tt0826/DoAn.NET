@@ -26,16 +26,17 @@ namespace DoAn.NET1
         private void frmChucNangKhoa_Load(object sender, EventArgs e)
         {
             khs = new frmKhoa();
+           
         }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        
         private void sbtnThem_Click(object sender, EventArgs e)
         {
-            DTO_Khoa kH = new DTO_Khoa(txtMaKhoa.Text, txtTenKhoa.Text, txtmaSV.Text, txtMaGV.Text);
+            DTO_Khoa kH = new DTO_Khoa(txtMaKhoa.Text, txtTenKhoa.Text);
             if (kH.MaKhoa != string.Empty)
             {
                 IQueryable temp = kh.TimKhoa(txtMaKhoa.Text);
@@ -44,8 +45,7 @@ namespace DoAn.NET1
                     kh.themKhoa(kH);
                     txtMaKhoa.Text = string.Empty;
                     txtTenKhoa.Text = string.Empty;
-                    txtmaSV.Text = string.Empty;
-                    txtMaGV.Text = string.Empty;
+                 
                     khs.Load_Khoa();
                 }
                 else
@@ -71,7 +71,7 @@ namespace DoAn.NET1
 
             if (r == DialogResult.Yes)
             {
-                DTO_Khoa kH = new DTO_Khoa(txtmaSV.Text, txtTenKhoa.Text, txtmaSV.Text,txtMaGV.Text);
+                DTO_Khoa kH = new DTO_Khoa(txtMaKhoa.Text, txtTenKhoa.Text);
                 kh.SuaKhoa(kH);
 
             }
@@ -79,7 +79,7 @@ namespace DoAn.NET1
 
         private void sbtnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show($"Bạn có chắc muốn xóa khoa -{txtMaGV.Text}- không?", "Thông báo",
+            DialogResult r = MessageBox.Show($"Bạn có chắc muốn xóa khoa -{txtMaKhoa.Text}- không?", "Thông báo",
              MessageBoxButtons.YesNo,
              MessageBoxIcon.Warning);
 
@@ -93,6 +93,17 @@ namespace DoAn.NET1
         private void stbnThoat_Click(object sender, EventArgs e)
         { 
             this.Close();
+        }
+      
+        private void cbmaSV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void txtMaGV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

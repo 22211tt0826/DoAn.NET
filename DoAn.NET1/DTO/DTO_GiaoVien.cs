@@ -17,6 +17,7 @@ namespace DTO
         private string eMail;
         private string tenCV;
         private string maLop;
+        private string maKhoa;
         private string passTK;
 
         public DTO_GiaoVien()
@@ -24,7 +25,7 @@ namespace DTO
 
         }
 
-        public DTO_GiaoVien(string maGV, string hoTenGV, string gioitinh, DateTime ngaySinh, string noiSinh, string sDT, string eMail, string tenCV, string maLop, string passTK)
+        public DTO_GiaoVien(string maGV, string hoTenGV, string gioitinh, DateTime ngaySinh, string noiSinh, string sDT, string eMail, string tenCV, string maLop, string maKhoa, string passTK)
         {
             this.maGV = maGV;
             this.hoTenGV = hoTenGV;
@@ -35,6 +36,7 @@ namespace DTO
             this.eMail = eMail;
             this.tenCV = tenCV;
             this.maLop = maLop;
+            this.maKhoa = maKhoa;
             this.passTK = passTK;
         }
 
@@ -47,6 +49,7 @@ namespace DTO
         public string EMail { get => eMail; set => eMail = value; }
         public string TenCV { get => tenCV; set => tenCV = value; }
         public string MaLop { get => maLop; set => maLop = value; }
+        public string MaKhoa { get => maKhoa; set => maKhoa = value; }
         public string PassTK { get => passTK; set => passTK = value; }
     }
 }

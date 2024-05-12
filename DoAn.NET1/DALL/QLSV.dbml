@@ -22,6 +22,16 @@
       <Association Name="SinhVien_BangViPham" Member="SinhVien" ThisKey="maSV" OtherKey="maSV" Type="SinhVien" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.diemDanh" Member="diemDanhs">
+    <Type Name="diemDanh">
+      <Column Name="maSV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maHP" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sotiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="thoiGian" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="hocPhan_diemDanh" Member="hocPhan" ThisKey="maHP" OtherKey="maHP" Type="hocPhan" IsForeignKey="true" />
+      <Association Name="SinhVien_diemDanh" Member="SinhVien" ThisKey="maSV" OtherKey="maSV" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.GiaoVien" Member="GiaoViens">
     <Type Name="GiaoVien">
       <Column Name="maGV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -34,18 +44,9 @@
       <Column Name="tenCV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="tenLop" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="passTK" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="GiaoVien_khoa" Member="khoas" ThisKey="maGV" OtherKey="maGV" Type="khoa" />
+      <Column Name="maKhoa" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Association Name="GiaoVien_SinhVien" Member="SinhViens" ThisKey="maGV" OtherKey="maGV" Type="SinhVien" />
-    </Type>
-  </Table>
-  <Table Name="dbo.diemDanh" Member="diemDanhs">
-    <Type Name="diemDanh">
-      <Column Name="maSV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="maHP" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="sotiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="thoiGian" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="hocPhan_diemDanh" Member="hocPhan" ThisKey="maHP" OtherKey="maHP" Type="hocPhan" IsForeignKey="true" />
-      <Association Name="SinhVien_diemDanh" Member="SinhVien" ThisKey="maSV" OtherKey="maSV" Type="SinhVien" IsForeignKey="true" />
+      <Association Name="khoa_GiaoVien" Member="khoa" ThisKey="maKhoa" OtherKey="maKhoa" Type="khoa" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.hocBong" Member="hocBongs">
@@ -55,18 +56,6 @@
       <Column Name="tenHK" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="maSV" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Association Name="SinhVien_hocBong" Member="SinhVien" ThisKey="maSV" OtherKey="maSV" Type="SinhVien" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.khoa" Member="khoas">
-    <Type Name="khoa">
-      <Column Name="maKhoa" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenKhoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="maSV" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="maGV" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
-      <Association Name="khoa_hocPhan" Member="hocPhans" ThisKey="maKhoa" OtherKey="maKhoa" Type="hocPhan" />
-      <Association Name="khoa_Lop" Member="Lop" ThisKey="maKhoa" OtherKey="maKhoa" Type="Lop" Cardinality="One" />
-      <Association Name="GiaoVien_khoa" Member="GiaoVien" ThisKey="maGV" OtherKey="maGV" Type="GiaoVien" IsForeignKey="true" />
-      <Association Name="SinhVien_khoa" Member="SinhVien" ThisKey="maSV" OtherKey="maSV" Type="SinhVien" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.hocPhan" Member="hocPhans">
@@ -84,6 +73,15 @@
       <Association Name="hocPhan_diemDanh" Member="diemDanhs" ThisKey="maHP" OtherKey="maHP" Type="diemDanh" />
       <Association Name="khoa_hocPhan" Member="khoa" ThisKey="maKhoa" OtherKey="maKhoa" Type="khoa" IsForeignKey="true" />
       <Association Name="SinhVien_hocPhan" Member="SinhVien" ThisKey="maSV" OtherKey="maSV" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.khoa" Member="khoas">
+    <Type Name="khoa">
+      <Column Name="maKhoa" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenKhoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="khoa_GiaoVien" Member="GiaoViens" ThisKey="maKhoa" OtherKey="maKhoa" Type="GiaoVien" />
+      <Association Name="khoa_hocPhan" Member="hocPhans" ThisKey="maKhoa" OtherKey="maKhoa" Type="hocPhan" />
+      <Association Name="khoa_Lop" Member="Lop" ThisKey="maKhoa" OtherKey="maKhoa" Type="Lop" Cardinality="One" />
     </Type>
   </Table>
   <Table Name="dbo.Lop" Member="Lops">
@@ -110,7 +108,6 @@
       <Association Name="SinhVien_BangViPham" Member="BangViPhams" ThisKey="maSV" OtherKey="maSV" Type="BangViPham" />
       <Association Name="SinhVien_diemDanh" Member="diemDanhs" ThisKey="maSV" OtherKey="maSV" Type="diemDanh" />
       <Association Name="SinhVien_hocBong" Member="hocBongs" ThisKey="maSV" OtherKey="maSV" Type="hocBong" />
-      <Association Name="SinhVien_khoa" Member="khoas" ThisKey="maSV" OtherKey="maSV" Type="khoa" />
       <Association Name="SinhVien_hocPhan" Member="hocPhans" ThisKey="maSV" OtherKey="maSV" Type="hocPhan" />
       <Association Name="SinhVien_sinhVienVP" Member="sinhVienVPs" ThisKey="maSV" OtherKey="maSV" Type="sinhVienVP" />
       <Association Name="GiaoVien_SinhVien" Member="GiaoVien" ThisKey="maGV" OtherKey="maGV" Type="GiaoVien" IsForeignKey="true" />

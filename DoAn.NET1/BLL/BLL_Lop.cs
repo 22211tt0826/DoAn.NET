@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    internal class BLL_Lop
+    public class BLL_Lop
     {
         private DAL_Lop dal_lop = new DAL_Lop();
         public IQueryable layDSLop()

@@ -365,6 +365,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "frmDiemDanh";
             this.Text = "frmDiemDanh";
+            this.Load += new System.EventHandler(this.frmDiemDanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

@@ -19,7 +19,22 @@ namespace DoAn.NET1
         {
             InitializeComponent();
         }
+        public List<string> LayDanhSachMaGV()
+        {
+            List<string> danhSachMaSV = new List<string>();
 
+            // Lặp qua mỗi dòng trong gridControl và lấy giá trị từ cột cụ thể (ví dụ: cột "MaGV")
+            for (int i = 0; i < gridView1.RowCount; i++)
+            {
+                object value = gridView1.GetRowCellValue(i, "maGV");
+                if (value != null)
+                {
+                    danhSachMaSV.Add(value.ToString());
+                }
+            }
+
+            return danhSachMaSV;
+        }
         public void LoadData()
         {
             gv = new BLL_GiaoVien();
@@ -31,19 +46,27 @@ namespace DoAn.NET1
             //s.stbnCapNhat.Enabled = false;
 
         }
+        
         private void sbtnThem_Click(object sender, EventArgs e)
         {
-          
+            
         }
+
 
         private void frmGiaoVien_Load(object sender, EventArgs e)
         {
+
             LoadData();
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
+            LoadData();
+        }
 
+        private void gridControl1_Load(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

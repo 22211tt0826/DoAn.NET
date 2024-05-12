@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_BangDiem.cs" />
+    <Compile Include="DAL_BangViPham.cs" />
+    <Compile Include="DAL_DiemDanh.cs" />
     <Compile Include="DAL_GiaoVien.cs" />
+    <Compile Include="DAL_HocBong.cs" />
     <Compile Include="DAL_HocPhan.cs" />
     <Compile Include="DAL_Khoa.cs" />
     <Compile Include="DAL_Lop.cs" />
     <Compile Include="DAL_SinhVien.cs" />
+    <Compile Include="DAL_SVViPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

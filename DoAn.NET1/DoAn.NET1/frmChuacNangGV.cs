@@ -33,7 +33,7 @@ namespace DoAn.NET1
         {
 
         }
-
+      
         private void frmChuacNangGV_Load(object sender, EventArgs e)
         {
             Gv = new frmGiaoVien();
@@ -41,13 +41,14 @@ namespace DoAn.NET1
 
         private void sbtnThem_Click(object sender, EventArgs e)
         {
-            DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text,  null);
+            DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text, txtKhoa.Text, null);
             if (sv.MaGV != string.Empty)
             {
                 IQueryable temp = svs.TimGV(txtmaGV.Text);
                 if (temp.Count() == 0)
                 {
                     svs.ThemGV(sv);
+                    Gv.LoadData();
                     txtmaGV.Text = string.Empty;
                     txtHoTen.Text = string.Empty;
                     cbGioiTinh.Text = string.Empty;
@@ -56,7 +57,7 @@ namespace DoAn.NET1
                     txtEmail.Text = string.Empty;
                     cbLop.Text = string.Empty;
                     cbChucVu.Text = string.Empty;
-                    Gv.LoadData();
+                    
                 }
                 else
                 {
@@ -64,6 +65,7 @@ namespace DoAn.NET1
               MessageBoxButtons.OK,
               MessageBoxIcon.Warning);
                 }
+               
             }
             else
             {
@@ -83,9 +85,11 @@ namespace DoAn.NET1
 
             if (r == DialogResult.Yes)
             {
-                DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text, null);
+                DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text, txtKhoa.Text, null);
                 svs.SuaGV(sv);
+                Gv.LoadData();
             }
+
         }
 
         private void sbtnXoa_Click(object sender, EventArgs e)
@@ -97,8 +101,10 @@ namespace DoAn.NET1
             if (r == DialogResult.Yes)
             {
                 svs.XoaGV(txtmaGV.Text);
+                Gv.LoadData();
 
             }
+           
         }
 
         private void stbnThoat_Click(object sender, EventArgs e)

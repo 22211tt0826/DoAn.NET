@@ -2,6 +2,11 @@ CREATE DATABASE QLSV
 USE QLSV
 
 SET DATEFORMAT dmy;
+CREATE TABLE khoa(
+maKhoa nvarchar (20) not null,
+tenKhoa nvarchar (30),
+PRIMARY KEY (maKhoa)
+)
 CREATE TABLE GiaoVien (
 maGV nvarchar (20) not null,
 hoTenGV nvarchar (30),
@@ -12,8 +17,10 @@ sDT nvarchar(10) ,
 eMail nvarchar (30),
 tenCV nvarchar(20),
 tenLop nvarchar (20),
-passTK nvarchar (20)
+passTK nvarchar (20),
+maKhoa nvarchar (20) not null,
 primary key (maGV),
+FOREIGN KEY (maKhoa) REFERENCES  Khoa(maKhoa),
 )
 CREATE TABLE SinhVien (
 maSV nvarchar (20) not null,
@@ -30,15 +37,7 @@ passTK nvarchar (20)
 primary key (maSV),
 FOREIGN KEY (maGV) REFERENCES  GiaoVien(maGV)
 )
-CREATE TABLE khoa(
-maKhoa nvarchar (20) not null,
-tenKhoa nvarchar (30),
-maSV nvarchar (20) not null,
-maGV nvarchar (20) not null,
-PRIMARY KEY (maKhoa),
-FOREIGN KEY (maSV) REFERENCES  SinhVien(maSV),
-FOREIGN KEY (maGV) REFERENCES  GiaoVien(maGV)
-)
+
 CREATE TABLE Lop(
 tenLop nvarchar (20),
 maKhoa nvarchar (20) not null,

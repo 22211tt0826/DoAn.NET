@@ -21,6 +21,7 @@ namespace DoAn.NET1
             InitializeComponent();
         }
 
+
         frmSinhVien s;
         public void LoadData()
         {
@@ -38,7 +39,25 @@ namespace DoAn.NET1
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
+            LoadData();
+           
+        }
+        
+        public List<string> LayDanhSachMaSV()
+        {
+            List<string> danhSachMaSV = new List<string>();
 
+            // Lặp qua mỗi dòng trong gridControl và lấy giá trị từ cột cụ thể (ví dụ: cột "MaSV")
+            for (int i = 0; i < gridView1.RowCount; i++)
+            {
+                object value = gridView1.GetRowCellValue(i, "maSV");
+                if (value != null)
+                {
+                    danhSachMaSV.Add(value.ToString());
+                }
+            }
+
+            return danhSachMaSV;
         }
     }
 }

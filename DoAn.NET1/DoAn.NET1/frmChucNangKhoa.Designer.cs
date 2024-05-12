@@ -30,13 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChucNangKhoa));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtMaGV = new DevExpress.XtraEditors.ComboBoxEdit();
             this.stbnThoat = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.txtmaSV = new DevExpress.XtraEditors.TextEdit();
             this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
             this.txtMaKhoa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -48,8 +44,6 @@
             this.TextEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaGV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtmaSV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKhoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -59,13 +53,9 @@
             // groupControl1
             // 
             this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupControl1.Controls.Add(this.txtMaGV);
             this.groupControl1.Controls.Add(this.stbnThoat);
-            this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.sbtnXoa);
-            this.groupControl1.Controls.Add(this.txtmaSV);
             this.groupControl1.Controls.Add(this.stbnCapNhap);
-            this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.sbtnThem);
             this.groupControl1.Controls.Add(this.txtMaKhoa);
             this.groupControl1.Controls.Add(this.labelControl10);
@@ -82,16 +72,6 @@
             this.groupControl1.Text = "Nhập Thông Tin Khoa";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
-            // txtMaGV
-            // 
-            this.txtMaGV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaGV.Location = new System.Drawing.Point(155, 189);
-            this.txtMaGV.Name = "txtMaGV";
-            this.txtMaGV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtMaGV.Size = new System.Drawing.Size(234, 26);
-            this.txtMaGV.TabIndex = 99;
-            // 
             // stbnThoat
             // 
             this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -102,15 +82,6 @@
             this.stbnThoat.TabIndex = 25;
             this.stbnThoat.Text = "Thoát";
             this.stbnThoat.Click += new System.EventHandler(this.stbnThoat_Click);
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelControl4.Location = new System.Drawing.Point(50, 192);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(46, 19);
-            this.labelControl4.TabIndex = 98;
-            this.labelControl4.Text = "Mã GV";
             // 
             // sbtnXoa
             // 
@@ -123,14 +94,6 @@
             this.sbtnXoa.Text = "Xóa ";
             this.sbtnXoa.Click += new System.EventHandler(this.sbtnXoa_Click);
             // 
-            // txtmaSV
-            // 
-            this.txtmaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmaSV.Location = new System.Drawing.Point(155, 151);
-            this.txtmaSV.Name = "txtmaSV";
-            this.txtmaSV.Size = new System.Drawing.Size(234, 26);
-            this.txtmaSV.TabIndex = 97;
-            // 
             // stbnCapNhap
             // 
             this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -141,15 +104,6 @@
             this.stbnCapNhap.TabIndex = 27;
             this.stbnCapNhap.Text = "Cập Nhập";
             this.stbnCapNhap.Click += new System.EventHandler(this.stbnCapNhap_Click);
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelControl3.Location = new System.Drawing.Point(50, 154);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(44, 19);
-            this.labelControl3.TabIndex = 96;
-            this.labelControl3.Text = "Mã SV";
             // 
             // sbtnThem
             // 
@@ -165,7 +119,7 @@
             // txtMaKhoa
             // 
             this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaKhoa.Location = new System.Drawing.Point(155, 64);
+            this.txtMaKhoa.Location = new System.Drawing.Point(142, 93);
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Size = new System.Drawing.Size(234, 26);
             this.txtMaKhoa.TabIndex = 95;
@@ -173,7 +127,7 @@
             // labelControl10
             // 
             this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelControl10.Location = new System.Drawing.Point(50, 67);
+            this.labelControl10.Location = new System.Drawing.Point(37, 96);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(60, 19);
             this.labelControl10.TabIndex = 92;
@@ -182,7 +136,7 @@
             // txtTenKhoa
             // 
             this.txtTenKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenKhoa.Location = new System.Drawing.Point(155, 106);
+            this.txtTenKhoa.Location = new System.Drawing.Point(142, 135);
             this.txtTenKhoa.Name = "txtTenKhoa";
             this.txtTenKhoa.Size = new System.Drawing.Size(234, 26);
             this.txtTenKhoa.TabIndex = 79;
@@ -207,7 +161,7 @@
             // LabelControl2
             // 
             this.LabelControl2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelControl2.Location = new System.Drawing.Point(50, 109);
+            this.LabelControl2.Location = new System.Drawing.Point(37, 138);
             this.LabelControl2.Name = "LabelControl2";
             this.LabelControl2.Size = new System.Drawing.Size(67, 19);
             this.LabelControl2.TabIndex = 70;
@@ -244,8 +198,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaGV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtmaSV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKhoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
@@ -257,13 +209,9 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.ComboBoxEdit txtMaGV;
         private DevExpress.XtraEditors.SimpleButton stbnThoat;
-        internal DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SimpleButton sbtnXoa;
-        internal DevExpress.XtraEditors.TextEdit txtmaSV;
         private DevExpress.XtraEditors.SimpleButton stbnCapNhap;
-        internal DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton sbtnThem;
         internal DevExpress.XtraEditors.TextEdit txtMaKhoa;
         internal DevExpress.XtraEditors.LabelControl labelControl10;

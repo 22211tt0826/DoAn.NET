@@ -99,6 +99,9 @@
             this.cbHocKi.Name = "cbHocKi";
             this.cbHocKi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbHocKi.Properties.Items.AddRange(new object[] {
+            "HK1",
+            "HK2"});
             this.cbHocKi.Size = new System.Drawing.Size(234, 26);
             this.cbHocKi.TabIndex = 99;
             // 
@@ -114,7 +117,6 @@
             // txtSoTC
             // 
             this.txtSoTC.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSoTC.Enabled = false;
             this.txtSoTC.Location = new System.Drawing.Point(155, 151);
             this.txtSoTC.Name = "txtSoTC";
             this.txtSoTC.Size = new System.Drawing.Size(234, 26);
@@ -132,7 +134,6 @@
             // txtMaHP
             // 
             this.txtMaHP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaHP.Enabled = false;
             this.txtMaHP.Location = new System.Drawing.Point(155, 64);
             this.txtMaHP.Name = "txtMaHP";
             this.txtMaHP.Size = new System.Drawing.Size(234, 26);
@@ -141,7 +142,6 @@
             // txtMaKhoa
             // 
             this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaKhoa.Enabled = false;
             this.txtMaKhoa.Location = new System.Drawing.Point(520, 172);
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Size = new System.Drawing.Size(234, 26);
@@ -159,7 +159,6 @@
             // txtLoaiHP
             // 
             this.txtLoaiHP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLoaiHP.Enabled = false;
             this.txtLoaiHP.Location = new System.Drawing.Point(520, 64);
             this.txtLoaiHP.Name = "txtLoaiHP";
             this.txtLoaiHP.Size = new System.Drawing.Size(234, 26);
@@ -168,7 +167,6 @@
             // txtGiaHP
             // 
             this.txtGiaHP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtGiaHP.Enabled = false;
             this.txtGiaHP.Location = new System.Drawing.Point(520, 121);
             this.txtGiaHP.Name = "txtGiaHP";
             this.txtGiaHP.Size = new System.Drawing.Size(234, 26);
@@ -177,7 +175,6 @@
             // txtTenHP
             // 
             this.txtTenHP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenHP.Enabled = false;
             this.txtTenHP.Location = new System.Drawing.Point(155, 106);
             this.txtTenHP.Name = "txtTenHP";
             this.txtTenHP.Size = new System.Drawing.Size(234, 26);
@@ -311,6 +308,7 @@
             this.Controls.Add(this.sbtnThem);
             this.Name = "frmChucNangDKHP";
             this.Text = "frmChucNangDKHP";
+            this.Load += new System.EventHandler(this.frmChucNangDKHP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

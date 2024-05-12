@@ -19,8 +19,7 @@ namespace DALL
                               {
                                   s.maKhoa,
                                   s.tenKhoa,
-                                  s.maSV,
-                                  s.maGV
+                                  
                               };
             return khoa;
         }
@@ -32,8 +31,7 @@ namespace DALL
                 {
                     them.maKhoa = kh.MaKhoa;
                     them.tenKhoa = kh.TenKhoa;
-                    them.maSV = kh.MaSV;
-                    them.maGV = kh.MaGV;
+                   
                 };
                 if (them.maKhoa != string.Empty)
                 {
@@ -59,8 +57,7 @@ namespace DALL
                 {
                     sua.maKhoa = kh.MaKhoa;
                     sua.tenKhoa = kh.TenKhoa;
-                    sua.maSV = kh.MaSV;
-                    sua.maGV = kh.MaGV;
+                 
                     db.SubmitChanges();
                     MessageBox.Show("Sửa Thành Công!", "Thông Báo!",
                             MessageBoxButtons.OK,
@@ -79,22 +76,19 @@ namespace DALL
                 try
                 {
                     if (id != string.Empty)
-                    {
+                    {  
+                        var xoa = from s in db.khoas
+                                    where s.maKhoa == id
+                                    select s;
+                        foreach (var item in xoa)
                         {
-                            var xoa = from s in db.khoas
-                                      where s.maKhoa == id
-                                      select s;
-                            foreach (var item in xoa)
-                            {
-                                db.khoas.DeleteOnSubmit(item);
-                                db.SubmitChanges();
-                            }
-                            MessageBox.Show("Xóa Thành Công!", "Thông Báo!",
-                                               MessageBoxButtons.OK,
-                                               MessageBoxIcon.Information);
-                            return true;
+                            db.khoas.DeleteOnSubmit(item);
+                            db.SubmitChanges();
                         }
-
+                        MessageBox.Show("Xóa Thành Công!", "Thông Báo!",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Information);
+                        return true;
                     }
             }
             catch (Exception ex)
@@ -112,8 +106,7 @@ namespace DALL
                               {
                                   s.maKhoa,
                                   s.tenKhoa,
-                                  s.maSV,
-                                  s.maGV
+                               
                               };
             return temp;
         }

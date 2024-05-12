@@ -54,6 +54,8 @@
             this.cbChucVu = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbGioiTinh = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtNgaySinh = new DevExpress.XtraEditors.DateEdit();
+            this.txtKhoa = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtmaGV.Properties)).BeginInit();
@@ -67,13 +69,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbGioiTinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKhoa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // stbnThoat
             // 
             this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
-            this.stbnThoat.Location = new System.Drawing.Point(625, 379);
+            this.stbnThoat.Location = new System.Drawing.Point(625, 425);
             this.stbnThoat.Name = "stbnThoat";
             this.stbnThoat.Size = new System.Drawing.Size(112, 34);
             this.stbnThoat.TabIndex = 10;
@@ -84,7 +87,7 @@
             // 
             this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
-            this.sbtnXoa.Location = new System.Drawing.Point(486, 379);
+            this.sbtnXoa.Location = new System.Drawing.Point(486, 425);
             this.sbtnXoa.Name = "sbtnXoa";
             this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
             this.sbtnXoa.TabIndex = 11;
@@ -95,7 +98,7 @@
             // 
             this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
-            this.stbnCapNhap.Location = new System.Drawing.Point(340, 379);
+            this.stbnCapNhap.Location = new System.Drawing.Point(327, 425);
             this.stbnCapNhap.Name = "stbnCapNhap";
             this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
             this.stbnCapNhap.TabIndex = 12;
@@ -106,7 +109,7 @@
             // 
             this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
-            this.sbtnThem.Location = new System.Drawing.Point(202, 379);
+            this.sbtnThem.Location = new System.Drawing.Point(153, 425);
             this.sbtnThem.Name = "sbtnThem";
             this.sbtnThem.Size = new System.Drawing.Size(112, 34);
             this.sbtnThem.TabIndex = 13;
@@ -116,6 +119,8 @@
             // groupControl1
             // 
             this.groupControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupControl1.Controls.Add(this.txtKhoa);
+            this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.txtmaGV);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.LabelControl9);
@@ -138,7 +143,7 @@
             this.groupControl1.Controls.Add(this.txtNgaySinh);
             this.groupControl1.Location = new System.Drawing.Point(12, 28);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(935, 319);
+            this.groupControl1.Size = new System.Drawing.Size(935, 372);
             this.groupControl1.TabIndex = 14;
             this.groupControl1.Text = "Thông Tin ";
             // 
@@ -281,6 +286,9 @@
             this.cbChucVu.Name = "cbChucVu";
             this.cbChucVu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbChucVu.Properties.Items.AddRange(new object[] {
+            "Giao Viên Bộ Môn",
+            "Giao Viên Hướng Dẫn "});
             this.cbChucVu.Size = new System.Drawing.Size(234, 26);
             this.cbChucVu.TabIndex = 90;
             // 
@@ -290,6 +298,9 @@
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbGioiTinh.Properties.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
             this.cbGioiTinh.Size = new System.Drawing.Size(234, 26);
             this.cbGioiTinh.TabIndex = 88;
             this.cbGioiTinh.SelectedIndexChanged += new System.EventHandler(this.txtGioiTinh_SelectedIndexChanged);
@@ -312,6 +323,21 @@
             this.txtNgaySinh.Size = new System.Drawing.Size(234, 26);
             this.txtNgaySinh.TabIndex = 89;
             this.txtNgaySinh.EditValueChanged += new System.EventHandler(this.txtNgaySinh_EditValueChanged);
+            // 
+            // txtKhoa
+            // 
+            this.txtKhoa.Location = new System.Drawing.Point(343, 341);
+            this.txtKhoa.Name = "txtKhoa";
+            this.txtKhoa.Size = new System.Drawing.Size(234, 26);
+            this.txtKhoa.TabIndex = 95;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(277, 344);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(35, 19);
+            this.labelControl11.TabIndex = 94;
+            this.labelControl11.Text = "Khoa";
             // 
             // frmChuacNangGV
             // 
@@ -340,6 +366,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbGioiTinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKhoa.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -371,5 +398,7 @@
         private DevExpress.XtraEditors.ComboBoxEdit cbChucVu;
         private DevExpress.XtraEditors.ComboBoxEdit cbGioiTinh;
         private DevExpress.XtraEditors.DateEdit txtNgaySinh;
+        internal DevExpress.XtraEditors.TextEdit txtKhoa;
+        internal DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }

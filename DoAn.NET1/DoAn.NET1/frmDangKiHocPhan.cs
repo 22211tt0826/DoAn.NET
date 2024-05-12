@@ -27,7 +27,7 @@ namespace DoAn.NET1
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
-
+            Load_HP();
         }
 
         private void frmDangKiHocPhan_Load(object sender, EventArgs e)
