@@ -190,12 +190,6 @@
     <Compile Include="frmGiaoVien.Designer.cs">
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSInhVienViPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSInhVienViPham.Designer.cs">
-      <DependentUpon>frmSInhVienViPham.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="frmBangVP.resx">
       <DependentUpon>frmBangVP.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,9 +259,6 @@
     </Compile>
     <EmbeddedResource Include="frmGiaoVien.resx">
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSInhVienViPham.resx">
-      <DependentUpon>frmSInhVienViPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

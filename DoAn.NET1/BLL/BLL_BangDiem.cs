@@ -10,7 +10,7 @@ namespace BLL
 {
     public class BLL_BangDiem
     {
-        
+       
             private DAL_BangDiem dal_bd = new DAL_BangDiem();
             public IQueryable layDSBangDiem()
             {
@@ -28,7 +28,8 @@ namespace BLL
             {
                 return dal_bd.SuaBangDiem(bd);
             }
-            public IQueryable TimBangDiem(string name)
+        
+        public IQueryable TimBangDiem(string name)
             {
                 return dal_bd.TimBangDiem(name);
             }

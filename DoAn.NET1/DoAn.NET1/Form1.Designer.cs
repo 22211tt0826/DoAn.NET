@@ -52,6 +52,7 @@
             this.btnSVViPham = new DevExpress.XtraBars.BarButtonItem();
             this.btnDiemDanh = new DevExpress.XtraBars.BarButtonItem();
             this.btnBangVP = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -65,7 +66,10 @@
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.SkinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.ribbonControl2 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.tabHienThi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl2)).BeginInit();
             this.SuspendLayout();
@@ -161,7 +165,6 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.btnKhoa);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnDangKiHP);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnLop);
-            this.ribbonPageGroup10.ItemLinks.Add(this.btnSVViPham);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnDiemDanh);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnBangVP);
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem2);
@@ -241,8 +244,19 @@
             this.btnBangVP.Name = "btnBangVP";
             this.btnBangVP.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBangVP_ItemClick);
             // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Học Bổng";
+            this.barButtonItem2.Id = 17;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
             // ribbonPageGroup11
             // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Report";
             // 
@@ -353,10 +367,14 @@
             this.btnSVViPham,
             this.btnDiemDanh,
             this.btnBangVP,
-            this.barButtonItem2});
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6});
             this.ribbonControl2.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl2.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl2.MaxItemId = 18;
+            this.ribbonControl2.MaxItemId = 23;
             this.ribbonControl2.Name = "ribbonControl2";
             this.ribbonControl2.OptionsMenuMinWidth = 495;
             this.ribbonControl2.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -367,14 +385,31 @@
             this.ribbonControl2.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             this.ribbonControl2.Click += new System.EventHandler(this.ribbonControl2_Click);
             // 
-            // barButtonItem2
+            // barButtonItem3
             // 
-            this.barButtonItem2.Caption = "Học Bổng";
-            this.barButtonItem2.Id = 17;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            this.barButtonItem3.Id = 18;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Reports_BangDiem";
+            this.barButtonItem4.Id = 19;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Id = 20;
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Reports_HocBong";
+            this.barButtonItem6.Id = 22;
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.barButtonItem6.Name = "barButtonItem6";
             // 
             // frmMain
             // 
@@ -434,6 +469,10 @@
         private DevExpress.XtraBars.BarButtonItem btnDiemDanh;
         private DevExpress.XtraBars.BarButtonItem btnBangVP;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
     }
 }
 

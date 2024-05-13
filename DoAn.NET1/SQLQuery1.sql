@@ -67,32 +67,17 @@ diemTB float,
 primary key (maSV,maHP),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
 FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
-
-)
-CREATE TABLE hocBong (
-maHB nvarchar (20)not null ,
-loaiHB nvarchar (10),
-tenHK nvarchar (10),
-maSV nvarchar (20) not null, 
-PRIMARY KEY (maHB),
-FOREIGN KEY (maSV) REFERENCES SinhVien(maSV)
 )
 CREATE TABLE BangViPham(
 maVP nvarchar (20) not null,
 noidungVP nvarchar (200),
-maSV nvarchar (20) not null,
+maSV nvarchar (20) not null, 
 maHP nvarchar (20) not null,
 primary key (maVP,maSV),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
 FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
 )
-CREATE TABLE sinhVienVP(
-maVP nvarchar (20) not null,
-thoiGian date ,
-maSV nvarchar (20) not null,
-primary key (maVP,maSV),
-FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
-)
+
 CREATE TABLE diemDanh(
 maSV nvarchar (20) not null,
 maHP nvarchar (20) not null,
@@ -108,3 +93,7 @@ passTK nvarchar (20)
 primary key (tenTk)
 )
 
+Select *
+From SinhVien
+join bangDiem on bangDiem.maSV=SinhVien.maSV
+where NOT EXISTS (select * from DiemDanh where maSV = SinhVien.maSV AND thoiGian ='2024-05-13' AND maHP=bangDiem.maHP)

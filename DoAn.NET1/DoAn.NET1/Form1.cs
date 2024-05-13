@@ -297,28 +297,7 @@ namespace DoAn.NET1
 
         private void btnSVViPham_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            // Kiểm tra xem tab "Thông Tin Giáo Viên" đã tồn tại chưa
-            DevExpress.XtraTab.XtraTabPage existingTab = tabHienThi.TabPages.FirstOrDefault(tab => tab.Text == "Sinh Vien Vi Phạm");
-
-            // Nếu tab đã tồn tại
-            if (existingTab != null)
-            {
-                // Chọn tab đó là tab được chọn
-                tabHienThi.SelectedTabPage = existingTab;
-            }
-            else
-            {
-                frmSInhVienViPham frmSInhVienViPham = new frmSInhVienViPham();
-                frmSInhVienViPham.TopLevel = false;
-                frmSInhVienViPham.AutoScroll = true;
-                frmSInhVienViPham.Dock = DockStyle.Top;
-                DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
-                xt.Text = "Sinh Vien Vi Phạm";
-                xt.Controls.Add(frmSInhVienViPham);
-                frmSInhVienViPham.Show();
-                tabHienThi.TabPages.Add(xt);
-                tabHienThi.SelectedTabPage = xt;
-            }
+            
         }
 
         private void btnDiemDanh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace DALL
 {
@@ -23,6 +24,7 @@ namespace DALL
                               };
             return diemDanh;
         }
+        
         public bool ThemDiemDanh(DTO_DiemDanh dd)
         {
             try
@@ -38,7 +40,7 @@ namespace DALL
                 {
                     db.diemDanhs.InsertOnSubmit(them);
                     db.SubmitChanges();
-                    MessageBox.Show("Thêm thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Điểm  thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return true;
                 }
             }

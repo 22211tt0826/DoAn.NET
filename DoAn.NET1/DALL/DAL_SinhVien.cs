@@ -34,6 +34,23 @@ namespace DALL
             
             return sv;
         }
+        public IQueryable An(DateTime name)
+        {
+            IQueryable query = from sv in db.SinhViens
+                               join bd in db.bangDiems on sv.maSV equals bd.maSV
+                               where !(from dd in db.diemDanhs
+                                       where dd.maSV == sv.maSV && dd.thoiGian == name && dd.maHP == bd.maHP
+                                       select dd).Any()
+                               select new
+                               {
+                                   bd.maSV,
+                                   bd.maHP,
+                                   sv.hoTenSV,
+                                   sv.ngaySinh
+                               };
+
+            return query;
+        }
         public bool themSV(DTO_SinhVien sv)
         {
             try

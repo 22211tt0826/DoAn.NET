@@ -27,6 +27,7 @@ namespace BLL
         {
             return dal_dd.SuaDiemDanh(dd);
         }
+
         public IQueryable TimDiemDanh(string name)
         {
             return dal_dd.TimDiemDanh(name);

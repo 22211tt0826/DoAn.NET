@@ -19,7 +19,10 @@ namespace BLL
         {
             return dal_sv.laydssv();
         }
-
+        public IQueryable AN(DateTime name)
+        {
+            return dal_sv.An(name);
+        }
         //ThemSV
         public bool ThemSV(DTO_SinhVien sv)
         {

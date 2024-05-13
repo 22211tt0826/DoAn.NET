@@ -50,7 +50,6 @@
     <Compile Include="BLL_Khoa.cs" />
     <Compile Include="BLL_Lop.cs" />
     <Compile Include="BLL_SinhVien.cs" />
-    <Compile Include="BLL_SVViPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
