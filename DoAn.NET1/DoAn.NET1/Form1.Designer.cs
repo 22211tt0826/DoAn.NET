@@ -49,11 +49,13 @@
             this.btnKhoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnDangKiHP = new DevExpress.XtraBars.BarButtonItem();
             this.btnLop = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSVViPham = new DevExpress.XtraBars.BarButtonItem();
             this.btnDiemDanh = new DevExpress.XtraBars.BarButtonItem();
             this.btnBangVP = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSVViPham = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnLogin = new DevExpress.XtraBars.BarButtonItem();
@@ -67,9 +69,7 @@
             this.SkinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.ribbonControl2 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.tabHienThi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl2)).BeginInit();
             this.SuspendLayout();
@@ -220,14 +220,6 @@
             this.btnLop.Name = "btnLop";
             this.btnLop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLop_ItemClick);
             // 
-            // btnSVViPham
-            // 
-            this.btnSVViPham.Caption = "Sinh Viên Vi Phạm";
-            this.btnSVViPham.Id = 14;
-            this.btnSVViPham.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSVViPham.ImageOptions.Image")));
-            this.btnSVViPham.Name = "btnSVViPham";
-            this.btnSVViPham.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSVViPham_ItemClick);
-            // 
             // btnDiemDanh
             // 
             this.btnDiemDanh.Caption = "Điểm Danh";
@@ -259,6 +251,32 @@
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Report";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Reports_BangDiem";
+            this.barButtonItem4.Id = 19;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Reports_HocBong";
+            this.barButtonItem6.Id = 22;
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
+            // btnSVViPham
+            // 
+            this.btnSVViPham.Caption = "Sinh Viên Vi Phạm";
+            this.btnSVViPham.Id = 14;
+            this.btnSVViPham.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSVViPham.ImageOptions.Image")));
+            this.btnSVViPham.Name = "btnSVViPham";
+            this.btnSVViPham.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSVViPham_ItemClick);
             // 
             // ribbonPage7
             // 
@@ -390,26 +408,10 @@
             this.barButtonItem3.Id = 18;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Reports_BangDiem";
-            this.barButtonItem4.Id = 19;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
             // barButtonItem5
             // 
             this.barButtonItem5.Id = 20;
             this.barButtonItem5.Name = "barButtonItem5";
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "Reports_HocBong";
-            this.barButtonItem6.Id = 22;
-            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.barButtonItem6.Name = "barButtonItem6";
             // 
             // frmMain
             // 

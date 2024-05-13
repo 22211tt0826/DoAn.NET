@@ -11,6 +11,7 @@ using DevExpress.CodeParser;
 using DevExpress.Utils.Extensions;
 using DevExpress.Utils.Filtering;
 using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 
 
 
@@ -386,6 +387,17 @@ namespace DoAn.NET1
                 tabHienThi.TabPages.Add(xt);
                 tabHienThi.SelectedTabPage = xt;
             }
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraReport_bangdiem xtraReport_Bangdiem = new XtraReport_bangdiem();
+            xtraReport_Bangdiem.ShowRibbonPreview();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }
