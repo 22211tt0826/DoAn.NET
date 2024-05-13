@@ -10,8 +10,7 @@ namespace BLL
 {
     public class BLL_BangDiem
     {
-        public class BLL_Khoa
-        {
+        
             private DAL_BangDiem dal_bd = new DAL_BangDiem();
             public IQueryable layDSBangDiem()
             {
@@ -35,4 +34,4 @@ namespace BLL
             }
         }
     }
-}
+

@@ -44,20 +44,29 @@
             this.dgvSVViPham.TabIndex = 0;
             this.dgvSVViPham.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.dgvSVViPham.Click += new System.EventHandler(this.dgvSVViPham_Click);
             // 
             // gridView1
             // 
             this.gridView1.GridControl = this.dgvSVViPham;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.Behavior = DevExpress.XtraEditors.FindPanelBehavior.Search;
+            this.gridView1.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Contains;
+            this.gridView1.OptionsFind.FindDelay = 500;
+            this.gridView1.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
+            this.gridView1.OptionsFind.FindNullPrompt = "Nội Dung TÌm Kiếm";
+            this.gridView1.OptionsFind.ShowClearButton = false;
             // 
-            // SInhVienViPham
+            // frmSInhVienViPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1621, 812);
             this.Controls.Add(this.dgvSVViPham);
-            this.Name = "SInhVienViPham";
+            this.Name = "frmSInhVienViPham";
             this.Text = "SInhVienViPham";
+            this.Load += new System.EventHandler(this.frmSInhVienViPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSVViPham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

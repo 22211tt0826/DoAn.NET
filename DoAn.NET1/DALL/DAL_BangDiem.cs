@@ -14,11 +14,13 @@ namespace DALL
         public IQueryable layDSBangDiem()
         {
             IQueryable bangDiem = from s in db.bangDiems
+                                  join k in db.hocPhans
+                                  on s.maHP equals k.maHP
                               select new
                               {
                                   s.maHP,
                                   s.maSV,
-                                  s.tenHK,
+                                  k.tenHK,
                                   s.diemGK,
                                   s.diemCK,
                                   s.diemTB
@@ -57,8 +59,8 @@ namespace DALL
         {
             try
             {
-                bangDiem sua = db.bangDiems.Single(d => d.maSV == bd.MaSV);
-                if (sua.maSV != string.Empty)
+                bangDiem sua = db.bangDiems.Single(d => d.maHP == bd.MaHP);
+                if (sua.maHP != string.Empty)
                 {
                     sua.maHP = bd.MaHP;
                     sua.maSV = bd.MaSV;
@@ -87,7 +89,7 @@ namespace DALL
                 if (id != string.Empty)
                 {
                     var xoa = from s in db.bangDiems
-                              where s.maSV == id
+                              where s.maHP == id
                               select s;
                     foreach (var item in xoa)
                     {

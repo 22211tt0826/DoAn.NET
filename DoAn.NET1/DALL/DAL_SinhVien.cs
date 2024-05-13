@@ -16,6 +16,8 @@ namespace DALL
         public IQueryable laydssv()
         {
             IQueryable sv = from s in db.SinhViens
+                            join k in db.GiaoViens
+                            on s.maGV equals k.maGV
                             select new 
                             {
                                 s.maSV,
@@ -27,7 +29,7 @@ namespace DALL
                                 s.eMail,
                                 s.maGV,
                                 s.tenCV,
-                                s.tenLop
+                                k.tenLop
                             };
             
             return sv;
@@ -47,7 +49,7 @@ namespace DALL
                      them.eMail=sv.EMail;
                      them.maGV=sv.MaGV;
                     them.tenCV = sv.TenCV;
-                     them.tenLop=sv.TenLop;
+                    them.tenLop = sv.TenLop;
                 };
                 if (them.maSV != string.Empty )
                 {
@@ -108,8 +110,8 @@ namespace DALL
                     sua.sDT = sv.SDT;
                     sua.eMail = sv.EMail;
                     sua.maGV = sv.MaGV;
-                    sua.tenCV=sv.TenCV;
                     sua.tenLop = sv.TenLop;
+                    sua.tenCV = sv.TenCV;
 
                     db.SubmitChanges();
                     MessageBox.Show("Sửa Thành Công!", "Thông Báo!",
@@ -138,8 +140,8 @@ namespace DALL
                                   s.sDT,
                                   s.eMail,
                                   s.maGV,
+                                  s.tenLop,
                                   s.tenCV,
-                                  s.tenLop
                               };
             return temp;
         }

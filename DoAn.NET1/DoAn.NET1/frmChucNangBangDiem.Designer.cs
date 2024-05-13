@@ -113,7 +113,6 @@
             // txtDiemGK
             // 
             this.txtDiemGK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDiemGK.Enabled = false;
             this.txtDiemGK.Location = new System.Drawing.Point(519, 64);
             this.txtDiemGK.Name = "txtDiemGK";
             this.txtDiemGK.Size = new System.Drawing.Size(234, 26);
@@ -122,16 +121,15 @@
             // txtDiemCK
             // 
             this.txtDiemCK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDiemCK.Enabled = false;
             this.txtDiemCK.Location = new System.Drawing.Point(519, 121);
             this.txtDiemCK.Name = "txtDiemCK";
             this.txtDiemCK.Size = new System.Drawing.Size(234, 26);
             this.txtDiemCK.TabIndex = 80;
+            this.txtDiemCK.Leave += new System.EventHandler(this.txtDiemCK_Leave);
             // 
             // txtMaSV
             // 
             this.txtMaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaSV.Enabled = false;
             this.txtMaSV.Location = new System.Drawing.Point(147, 117);
             this.txtMaSV.Name = "txtMaSV";
             this.txtMaSV.Size = new System.Drawing.Size(234, 26);
@@ -265,6 +263,7 @@
             this.Controls.Add(this.sbtnThem);
             this.Name = "frmChucNangBangDiem";
             this.Text = "frmChucNangBangDiem";
+            this.Load += new System.EventHandler(this.frmChucNangBangDiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

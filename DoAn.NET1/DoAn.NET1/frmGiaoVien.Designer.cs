@@ -53,6 +53,13 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.Behavior = DevExpress.XtraEditors.FindPanelBehavior.Search;
+            this.gridView1.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Contains;
+            this.gridView1.OptionsFind.FindDelay = 500;
+            this.gridView1.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
+            this.gridView1.OptionsFind.FindNullPrompt = "Nội dung tìm kiếm";
+            this.gridView1.OptionsFind.ShowClearButton = false;
             // 
             // frmGiaoVien
             // 

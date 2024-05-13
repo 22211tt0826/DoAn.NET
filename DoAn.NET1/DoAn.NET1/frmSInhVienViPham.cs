@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,21 @@ namespace DoAn.NET1
         public frmSInhVienViPham()
         {
             InitializeComponent();
+        }
+        BLL_SVViPham viPham ;
+        public void Load_L()
+        {
+            viPham  = new BLL_SVViPham();
+            dgvSVViPham.DataSource = viPham.layDSSVViPham();
+        }
+        private void frmSInhVienViPham_Load(object sender, EventArgs e)
+        {
+            Load_L();
+        }
+
+        private void dgvSVViPham_Click(object sender, EventArgs e)
+        {
+            Load_L();
         }
     }
 }

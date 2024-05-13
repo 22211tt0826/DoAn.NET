@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraGrid;
 using DevExpress.XtraBars;
+using BLL;
 
 namespace DoAn.NET1
 {
@@ -21,10 +22,15 @@ namespace DoAn.NET1
         {
             InitializeComponent();
         }
-
+        BLL_BangDiem bangDiem;
+        public void Load_Bangdiem()
+        {
+            bangDiem = new BLL_BangDiem();
+            gridControl1.DataSource = bangDiem.layDSBangDiem();
+        }
         private void gridControl1_Click(object sender, EventArgs e)
         {
-
+            Load_Bangdiem();
         }
 
         private void gridControl1_MouseClick(object sender, MouseEventArgs e)
@@ -35,6 +41,11 @@ namespace DoAn.NET1
         private void gridControl1_MouseDown(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void frmBangDiem_Load(object sender, EventArgs e)
+        {
+            Load_Bangdiem();
         }
     }
 }

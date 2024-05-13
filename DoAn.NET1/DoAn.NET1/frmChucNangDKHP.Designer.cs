@@ -35,13 +35,11 @@
             this.txtSoTC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaHP = new DevExpress.XtraEditors.TextEdit();
-            this.txtMaKhoa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtLoaiHP = new DevExpress.XtraEditors.TextEdit();
             this.txtGiaHP = new DevExpress.XtraEditors.TextEdit();
             this.txtTenHP = new DevExpress.XtraEditors.TextEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.LabelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.LabelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.LabelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.LabelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -52,17 +50,19 @@
             this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.stbnCapNhap = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.LabelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMaKhoa = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbHocKi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoTC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoaiHP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGiaHP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenHP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -86,7 +86,7 @@
             this.groupControl1.Controls.Add(this.LabelControl2);
             this.groupControl1.Controls.Add(this.LabelControl1);
             this.groupControl1.Controls.Add(this.TextEdit4);
-            this.groupControl1.Location = new System.Drawing.Point(12, 12);
+            this.groupControl1.Location = new System.Drawing.Point(12, 133);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(815, 237);
             this.groupControl1.TabIndex = 24;
@@ -139,14 +139,6 @@
             this.txtMaHP.Size = new System.Drawing.Size(234, 26);
             this.txtMaHP.TabIndex = 95;
             // 
-            // txtMaKhoa
-            // 
-            this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaKhoa.Location = new System.Drawing.Point(520, 172);
-            this.txtMaKhoa.Name = "txtMaKhoa";
-            this.txtMaKhoa.Size = new System.Drawing.Size(234, 26);
-            this.txtMaKhoa.TabIndex = 94;
-            // 
             // labelControl10
             // 
             this.labelControl10.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -187,15 +179,6 @@
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(234, 26);
             this.textEdit3.TabIndex = 77;
-            // 
-            // LabelControl8
-            // 
-            this.LabelControl8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LabelControl8.Location = new System.Drawing.Point(454, 179);
-            this.LabelControl8.Name = "LabelControl8";
-            this.LabelControl8.Size = new System.Drawing.Size(60, 19);
-            this.LabelControl8.TabIndex = 76;
-            this.LabelControl8.Text = "Mã Khoa";
             // 
             // LabelControl7
             // 
@@ -256,7 +239,7 @@
             // 
             this.stbnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnThoat.ImageOptions.Image")));
-            this.stbnThoat.Location = new System.Drawing.Point(532, 272);
+            this.stbnThoat.Location = new System.Drawing.Point(532, 393);
             this.stbnThoat.Name = "stbnThoat";
             this.stbnThoat.Size = new System.Drawing.Size(112, 34);
             this.stbnThoat.TabIndex = 20;
@@ -267,7 +250,7 @@
             // 
             this.sbtnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnXoa.ImageOptions.Image")));
-            this.sbtnXoa.Location = new System.Drawing.Point(392, 272);
+            this.sbtnXoa.Location = new System.Drawing.Point(392, 393);
             this.sbtnXoa.Name = "sbtnXoa";
             this.sbtnXoa.Size = new System.Drawing.Size(112, 34);
             this.sbtnXoa.TabIndex = 21;
@@ -278,7 +261,7 @@
             // 
             this.stbnCapNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stbnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("stbnCapNhap.ImageOptions.Image")));
-            this.stbnCapNhap.Location = new System.Drawing.Point(248, 272);
+            this.stbnCapNhap.Location = new System.Drawing.Point(248, 393);
             this.stbnCapNhap.Name = "stbnCapNhap";
             this.stbnCapNhap.Size = new System.Drawing.Size(112, 34);
             this.stbnCapNhap.TabIndex = 22;
@@ -289,18 +272,35 @@
             // 
             this.sbtnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbtnThem.ImageOptions.Image")));
-            this.sbtnThem.Location = new System.Drawing.Point(107, 272);
+            this.sbtnThem.Location = new System.Drawing.Point(107, 393);
             this.sbtnThem.Name = "sbtnThem";
             this.sbtnThem.Size = new System.Drawing.Size(112, 34);
             this.sbtnThem.TabIndex = 23;
             this.sbtnThem.Text = "Thêm";
             this.sbtnThem.Click += new System.EventHandler(this.sbtnThem_Click);
             // 
+            // LabelControl8
+            // 
+            this.LabelControl8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelControl8.Location = new System.Drawing.Point(454, 179);
+            this.LabelControl8.Name = "LabelControl8";
+            this.LabelControl8.Size = new System.Drawing.Size(60, 19);
+            this.LabelControl8.TabIndex = 76;
+            this.LabelControl8.Text = "Mã Khoa";
+            // 
+            // txtMaKhoa
+            // 
+            this.txtMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMaKhoa.Location = new System.Drawing.Point(520, 172);
+            this.txtMaKhoa.Name = "txtMaKhoa";
+            this.txtMaKhoa.Size = new System.Drawing.Size(234, 26);
+            this.txtMaKhoa.TabIndex = 94;
+            // 
             // frmChucNangDKHP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 348);
+            this.ClientSize = new System.Drawing.Size(864, 591);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.stbnThoat);
             this.Controls.Add(this.sbtnXoa);
@@ -315,12 +315,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbHocKi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoTC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoaiHP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGiaHP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenHP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaKhoa.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,13 +328,11 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        internal DevExpress.XtraEditors.TextEdit txtMaKhoa;
         internal DevExpress.XtraEditors.LabelControl labelControl10;
         internal DevExpress.XtraEditors.TextEdit txtLoaiHP;
         internal DevExpress.XtraEditors.TextEdit txtGiaHP;
         internal DevExpress.XtraEditors.TextEdit txtTenHP;
         internal DevExpress.XtraEditors.TextEdit textEdit3;
-        internal DevExpress.XtraEditors.LabelControl LabelControl8;
         internal DevExpress.XtraEditors.LabelControl LabelControl7;
         internal DevExpress.XtraEditors.LabelControl LabelControl6;
         internal DevExpress.XtraEditors.LabelControl LabelControl5;
@@ -350,5 +348,7 @@
         internal DevExpress.XtraEditors.TextEdit txtMaHP;
         internal DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.ComboBoxEdit cbHocKi;
+        internal DevExpress.XtraEditors.TextEdit txtMaKhoa;
+        internal DevExpress.XtraEditors.LabelControl LabelControl8;
     }
 }

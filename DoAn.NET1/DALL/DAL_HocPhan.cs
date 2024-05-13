@@ -23,7 +23,7 @@ namespace DALL
                                   s.gia,
                                   s.tenHK,
                                   s.maKhoa,
-                                  s.maSV
+                         
                               };
             return hocPhan;
         }
@@ -40,7 +40,7 @@ namespace DALL
                     them.gia = hp.Gia;
                     them.tenHK = hp.TenHK;
                     them.maKhoa = hp.MaKhoa;
-                    them.maSV = hp.MaSV;
+                  
                 };
                 if (them.maHP != string.Empty)
                 {
@@ -71,7 +71,7 @@ namespace DALL
                     sua.gia = hp.Gia;
                     sua.tenHK = hp.TenHK;
                     sua.maKhoa = hp.MaKhoa;
-                    sua.maSV = hp.MaSV;
+                 
                     db.SubmitChanges();
                     MessageBox.Show("Sửa Thành Công!", "Thông Báo!",
                             MessageBoxButtons.OK,
@@ -128,7 +128,7 @@ namespace DALL
                                   s.gia,
                                   s.tenHK,
                                   s.maKhoa,
-                                  s.maSV
+                           
                               };
             return temp;
         }

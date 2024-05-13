@@ -65,6 +65,7 @@
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.SkinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.ribbonControl2 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.tabHienThi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl2)).BeginInit();
             this.SuspendLayout();
@@ -163,6 +164,7 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.btnSVViPham);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnDiemDanh);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnBangVP);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "Hiển Thị";
             // 
@@ -237,6 +239,7 @@
             this.btnBangVP.Id = 16;
             this.btnBangVP.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBangVP.ImageOptions.Image")));
             this.btnBangVP.Name = "btnBangVP";
+            this.btnBangVP.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBangVP_ItemClick);
             // 
             // ribbonPageGroup11
             // 
@@ -349,10 +352,11 @@
             this.btnLop,
             this.btnSVViPham,
             this.btnDiemDanh,
-            this.btnBangVP});
+            this.btnBangVP,
+            this.barButtonItem2});
             this.ribbonControl2.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl2.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl2.MaxItemId = 17;
+            this.ribbonControl2.MaxItemId = 18;
             this.ribbonControl2.Name = "ribbonControl2";
             this.ribbonControl2.OptionsMenuMinWidth = 495;
             this.ribbonControl2.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -362,6 +366,15 @@
             this.ribbonControl2.Size = new System.Drawing.Size(1137, 231);
             this.ribbonControl2.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             this.ribbonControl2.Click += new System.EventHandler(this.ribbonControl2_Click);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Học Bổng";
+            this.barButtonItem2.Id = 17;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // frmMain
             // 
@@ -420,6 +433,7 @@
         private DevExpress.XtraBars.BarButtonItem btnSVViPham;
         private DevExpress.XtraBars.BarButtonItem btnDiemDanh;
         private DevExpress.XtraBars.BarButtonItem btnBangVP;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }
 

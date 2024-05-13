@@ -41,7 +41,7 @@ namespace DoAn.NET1
 
         private void sbtnThem_Click(object sender, EventArgs e)
         {
-            DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text, txtKhoa.Text, null);
+            DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null,txtSDT.Text, txtEmail.Text, cbChucVu.Text, cbLop.Text, txtKhoa.Text, null);
             if (sv.MaGV != string.Empty)
             {
                 IQueryable temp = svs.TimGV(txtmaGV.Text);
@@ -55,8 +55,9 @@ namespace DoAn.NET1
                     txtNgaySinh.DateTime = DateTime.Now;
                     txtSDT.Text = string.Empty;
                     txtEmail.Text = string.Empty;
-                    cbLop.Text = string.Empty;
                     cbChucVu.Text = string.Empty;
+                    cbLop.Text = string.Empty;
+                   
                     
                 }
                 else
@@ -85,7 +86,7 @@ namespace DoAn.NET1
 
             if (r == DialogResult.Yes)
             {
-                DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbLop.Text, cbChucVu.Text, txtKhoa.Text, null);
+                DTO_GiaoVien sv = new DTO_GiaoVien(txtmaGV.Text, txtHoTen.Text, cbGioiTinh.Text, txtNgaySinh.DateTime, null, txtSDT.Text, txtEmail.Text, cbChucVu.Text, cbLop.Text,  txtKhoa.Text, null);
                 svs.SuaGV(sv);
                 Gv.LoadData();
             }

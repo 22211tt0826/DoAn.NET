@@ -53,10 +53,8 @@ loaiHP nvarchar (10),
 gia int ,
 tenHK nvarchar (10),
 maKhoa nvarchar (20) not null,
-maSV nvarchar (20) not null,
 PRIMARY KEY (maHP),
-FOREIGN KEY (maKhoa) REFERENCES  khoa(maKhoa),
-FOREIGN KEY (maSV) REFERENCES SinhVien(maSV)
+FOREIGN KEY (maKhoa) REFERENCES  khoa(maKhoa)
 )
 
 CREATE TABLE bangDiem (
@@ -88,7 +86,6 @@ primary key (maVP,maSV),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
 FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
 )
-
 CREATE TABLE sinhVienVP(
 maVP nvarchar (20) not null,
 thoiGian date ,
@@ -104,5 +101,10 @@ thoiGian date,
 primary key (maSV,maHP,thoiGian),
 FOREIGN KEY (maSV) REFERENCES SinhVien(maSV),
 FOREIGN KEY (maHP) REFERENCES hocPhan(maHP),
+)
+CREATE TABLE taiKhoan(
+tenTk nvarchar (30),
+passTK nvarchar (20)
+primary key (tenTk)
 )
 

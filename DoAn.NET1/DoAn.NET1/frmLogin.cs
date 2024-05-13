@@ -23,5 +23,10 @@ namespace DoAn.NET1
             frmRegister frmRegister = new frmRegister();
             frmRegister.ShowDialog();   
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

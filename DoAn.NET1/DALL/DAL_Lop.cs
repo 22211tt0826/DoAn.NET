@@ -14,13 +14,13 @@ namespace DALL
         public IQueryable layDSLop()
         {
             IQueryable lop = from s in db.SinhViens
-                             join k in  db.Lops
-                             on s.tenLop equals k.tenLop
+                             join k in db.GiaoViens
+                             on  s.maGV equals k.maGV
+                             
                               select new
                               {
                                   s.hoTenSV,
-                                  s.tenLop,
-                                 
+                                  k.tenLop
                               };
             return lop;
         }

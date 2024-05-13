@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.CodeParser;
 using DevExpress.Utils.Extensions;
 using DevExpress.Utils.Filtering;
 using DevExpress.XtraEditors;
@@ -354,6 +355,58 @@ namespace DoAn.NET1
         private void tabHienThi_CloseButtonClick(object sender, EventArgs e)
         {
            tabHienThi.TabPages.RemoveAt(tabHienThi.SelectedTabPageIndex);
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            // Kiểm tra xem tab "Thông Tin Giáo Viên" đã tồn tại chưa
+            DevExpress.XtraTab.XtraTabPage existingTab = tabHienThi.TabPages.FirstOrDefault(tab => tab.Text == "Học Bổng");
+
+            // Nếu tab đã tồn tại
+            if (existingTab != null)
+            {
+                // Chọn tab đó là tab được chọn
+                tabHienThi.SelectedTabPage = existingTab;
+            }
+            else
+            {
+                frmHocBong  hb = new frmHocBong();
+                hb.TopLevel = false;
+                hb.AutoScroll = true;
+              
+                DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
+                xt.Text = "Học Bổng";
+                xt.Controls.Add(hb);
+                hb.Show();
+                tabHienThi.TabPages.Add(xt);
+                tabHienThi.SelectedTabPage = xt;
+            }
+        }
+
+        private void btnBangVP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            // Kiểm tra xem tab "Thông Tin Giáo Viên" đã tồn tại chưa
+            DevExpress.XtraTab.XtraTabPage existingTab = tabHienThi.TabPages.FirstOrDefault(tab => tab.Text == "Danh Sách Vi Phạm");
+
+            // Nếu tab đã tồn tại
+            if (existingTab != null)
+            {
+                // Chọn tab đó là tab được chọn
+                tabHienThi.SelectedTabPage = existingTab;
+            }
+            else
+            {
+                frmBangVP hb = new frmBangVP();
+                hb.TopLevel = false;
+                hb.AutoScroll = true;
+                hb.Dock = DockStyle.Fill;
+                DevExpress.XtraTab.XtraTabPage xt = new DevExpress.XtraTab.XtraTabPage();
+                xt.Text = "Danh Sách Vi Phạm";
+                xt.Controls.Add(hb);
+                hb.Show();
+                tabHienThi.TabPages.Add(xt);
+                tabHienThi.SelectedTabPage = xt;
+            }
         }
     }
 }

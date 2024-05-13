@@ -24,20 +24,21 @@ namespace DoAn.NET1
         private frmDangKiHocPhan cn;
         private void sbtnThem_Click(object sender, EventArgs e)
         {
-            DTO_HocPhan hps = new DTO_HocPhan(txtMaHP.Text, txtTenHP.Text, int.Parse(txtSoTC.Text), txtLoaiHP.Text, int.Parse(txtGiaHP.Text), cbHocKi.Text, txtMaKhoa.Text,null);
+            DTO_HocPhan hps = new DTO_HocPhan(txtMaHP.Text, txtTenHP.Text, int.Parse(txtSoTC.Text), txtLoaiHP.Text, int.Parse(txtGiaHP.Text), cbHocKi.Text, txtMaKhoa.Text);
             if (hps.MaHP != string.Empty)
             {
                 IQueryable temp = hp.TimHocPhan(txtMaHP.Text);
                 if (temp.Count() == 0)
                 {
                     hp.themHocPhan(hps);
+                    cn.Load_HP();
                     txtMaHP.Text = string.Empty;
                     txtTenHP.Text = string.Empty;
                     txtSoTC.Text = string.Empty;
                     txtGiaHP.Text = string.Empty;
                     cbHocKi.Text = string.Empty;
                     txtMaKhoa.Text = string.Empty;
-                    cn.Load_HP();
+                    
                 }
                 else
                 {
@@ -62,7 +63,7 @@ namespace DoAn.NET1
 
             if (r == DialogResult.Yes)
             {
-                DTO_HocPhan hps = new DTO_HocPhan(txtMaHP.Text, txtTenHP.Text, int.Parse(txtSoTC.Text), txtLoaiHP.Text, int.Parse(txtGiaHP.Text), cbHocKi.Text, txtMaKhoa.Text, null);
+                DTO_HocPhan hps = new DTO_HocPhan(txtMaHP.Text, txtTenHP.Text, int.Parse(txtSoTC.Text), txtLoaiHP.Text, int.Parse(txtGiaHP.Text), cbHocKi.Text, txtMaKhoa.Text);
                 hp.SuaHocPhan(hps);
             }
         }
@@ -87,7 +88,7 @@ namespace DoAn.NET1
 
         private void frmChucNangDKHP_Load(object sender, EventArgs e)
         {
-
+            cn= new frmDangKiHocPhan();
         }
     }
 }

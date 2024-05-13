@@ -132,7 +132,7 @@ namespace DALL
                                   s.maGV,
                                   s.hoTenGV,
                                   s.gioitinh,
-                                  s.ngaySinh.Value,
+                                  s.ngaySinh,
                                   s.sDT,
                                   s.eMail,
                                   s.tenCV,

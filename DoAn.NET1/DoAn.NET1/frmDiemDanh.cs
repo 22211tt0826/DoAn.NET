@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,15 +18,20 @@ namespace DoAn.NET1
         {
             InitializeComponent();
         }
-
+        BLL_DiemDanh diemDanh;
+        public void Load_L()
+        {
+            diemDanh = new BLL_DiemDanh();
+           gridControl1 .DataSource = diemDanh.layDSDiemDanh();
+        }
         private void gridControl1_Click(object sender, EventArgs e)
         {
-            
+            Load_L();
         }
 
         private void frmDiemDanh_Load(object sender, EventArgs e)
         {
-
+            Load_L();
         }
     }
 }

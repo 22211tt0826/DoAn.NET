@@ -35,12 +35,12 @@
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.bbtnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.bbtnCapNhap = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtnThem = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.bbtnThem = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
@@ -65,6 +65,13 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.Behavior = DevExpress.XtraEditors.FindPanelBehavior.Search;
+            this.gridView1.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Contains;
+            this.gridView1.OptionsFind.FindDelay = 500;
+            this.gridView1.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
+            this.gridView1.OptionsFind.FindNullPrompt = "Nội Dung TÌm Kiếm";
+            this.gridView1.OptionsFind.ShowClearButton = false;
             // 
             // popupMenu1
             // 
@@ -90,6 +97,14 @@
             this.bbtnCapNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbtnCapNhap.ImageOptions.Image")));
             this.bbtnCapNhap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbtnCapNhap.ImageOptions.LargeImage")));
             this.bbtnCapNhap.Name = "bbtnCapNhap";
+            // 
+            // bbtnThem
+            // 
+            this.bbtnThem.Caption = "Thêm";
+            this.bbtnThem.Id = 4;
+            this.bbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbtnThem.ImageOptions.Image")));
+            this.bbtnThem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbtnThem.ImageOptions.LargeImage")));
+            this.bbtnThem.Name = "bbtnThem";
             // 
             // barManager1
             // 
@@ -136,14 +151,6 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 769);
             // 
-            // bbtnThem
-            // 
-            this.bbtnThem.Caption = "Thêm";
-            this.bbtnThem.Id = 4;
-            this.bbtnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.bbtnThem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.bbtnThem.Name = "bbtnThem";
-            // 
             // frmBangDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -156,6 +163,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmBangDiem";
             this.Text = "frmBangDiem";
+            this.Load += new System.EventHandler(this.frmBangDiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();

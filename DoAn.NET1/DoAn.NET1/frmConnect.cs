@@ -29,7 +29,14 @@ namespace DoAn.NET1
         }
         void loadform()
         {
-            txbTenMayChu.Text = Environment.MachineName ;
+            if (txbTenMayChu.Text == Environment.MachineName + @"\SQLEXPRESS")
+            {
+                txbTenMayChu.Text = Environment.MachineName + @"\SQLEXPRESS";
+            }
+            else
+            {
+                txbTenMayChu.Text = Environment.MachineName;
+            }
             if (cbXacThuc.Text == "Windows authentication")
             {
                 lbTen.Enabled = false;

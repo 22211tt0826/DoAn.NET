@@ -14,12 +14,15 @@ namespace DALL
         public IQueryable layDSHocBong()
         {
             IQueryable hocBong = from s in db.hocBongs
+                                 join k in db.bangDiems on s.maSV equals k.maSV
+                                 join m in db.hocPhans on k.maHP equals m.maHP
+                                 where k.diemTB>=8
                                  select new
                                  {
-                                     s.maHB,
-                                     s.loaiHB,
-                                     s.tenHK,
-                                     s.maSV
+                                     k.maHP,
+                                     k.diemTB,
+                                     m.tenHK,
+                                     k.maSV
                                  };
             return hocBong;
         }

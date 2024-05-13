@@ -55,11 +55,19 @@
             this.dgvHocBong.TabIndex = 1;
             this.dgvHocBong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.dgvHocBong.Click += new System.EventHandler(this.dgvHocBong_Click);
             // 
             // gridView1
             // 
             this.gridView1.GridControl = this.dgvHocBong;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.Behavior = DevExpress.XtraEditors.FindPanelBehavior.Search;
+            this.gridView1.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Contains;
+            this.gridView1.OptionsFind.FindDelay = 500;
+            this.gridView1.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
+            this.gridView1.OptionsFind.FindNullPrompt = "Nội Dùng Tìm Kiếm";
+            this.gridView1.OptionsFind.ShowClearButton = false;
             // 
             // frmHocBong
             // 
@@ -70,6 +78,7 @@
             this.Controls.Add(this.labelControl1);
             this.Name = "frmHocBong";
             this.Text = "frmHocBong";
+            this.Load += new System.EventHandler(this.frmHocBong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocBong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

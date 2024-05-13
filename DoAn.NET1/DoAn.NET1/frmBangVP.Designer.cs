@@ -44,11 +44,19 @@
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.Behavior = DevExpress.XtraEditors.FindPanelBehavior.Search;
+            this.gridView1.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Contains;
+            this.gridView1.OptionsFind.FindDelay = 500;
+            this.gridView1.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
+            this.gridView1.OptionsFind.FindNullPrompt = "Nội Dung TÌm Kiếm";
+            this.gridView1.OptionsFind.ShowClearButton = false;
             // 
             // frmBangVP
             // 
@@ -58,6 +66,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "frmBangVP";
             this.Text = "frmBangVP";
+            this.Load += new System.EventHandler(this.frmBangVP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

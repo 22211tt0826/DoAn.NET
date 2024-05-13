@@ -37,7 +37,6 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaSV = new DevExpress.XtraEditors.TextEdit();
             this.txtTenSV = new DevExpress.XtraEditors.TextEdit();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
@@ -47,7 +46,6 @@
             this.sbtnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.stbnCapNhat = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.cbTenLop = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.txtGioiTinh = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtmaGV = new DevExpress.XtraEditors.TextEdit();
@@ -58,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoiSinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbMaChucVu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbTenLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGioiTinh.Properties)).BeginInit();
@@ -162,18 +159,6 @@
             this.labelControl8.TabIndex = 56;
             this.labelControl8.Text = "Mã Chức Vụ";
             // 
-            // labelControl9
-            // 
-            this.labelControl9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.LineVisible = true;
-            this.labelControl9.Location = new System.Drawing.Point(552, 153);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(72, 24);
-            this.labelControl9.TabIndex = 57;
-            this.labelControl9.Text = "Tên Lớp";
-            // 
             // txtMaSV
             // 
             this.txtMaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -264,16 +249,6 @@
             this.sbtnThem.Text = "Thêm";
             this.sbtnThem.Click += new System.EventHandler(this.sbtnThem_Click);
             // 
-            // cbTenLop
-            // 
-            this.cbTenLop.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbTenLop.Location = new System.Drawing.Point(723, 157);
-            this.cbTenLop.Name = "cbTenLop";
-            this.cbTenLop.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbTenLop.Size = new System.Drawing.Size(234, 26);
-            this.cbTenLop.TabIndex = 73;
-            // 
             // txtNgaySinh
             // 
             this.txtNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -308,7 +283,7 @@
             // txtmaGV
             // 
             this.txtmaGV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmaGV.Location = new System.Drawing.Point(723, 209);
+            this.txtmaGV.Location = new System.Drawing.Point(723, 158);
             this.txtmaGV.Name = "txtmaGV";
             this.txtmaGV.Size = new System.Drawing.Size(234, 26);
             this.txtmaGV.TabIndex = 75;
@@ -319,7 +294,7 @@
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.LineVisible = true;
-            this.labelControl10.Location = new System.Drawing.Point(552, 211);
+            this.labelControl10.Location = new System.Drawing.Point(552, 160);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(101, 24);
             this.labelControl10.TabIndex = 74;
@@ -341,7 +316,6 @@
             this.Controls.Add(this.txtSdt);
             this.Controls.Add(this.txtmaGV);
             this.Controls.Add(this.labelControl10);
-            this.Controls.Add(this.cbTenLop);
             this.Controls.Add(this.stbnThoat);
             this.Controls.Add(this.sbtnXoa);
             this.Controls.Add(this.stbnCapNhat);
@@ -351,7 +325,6 @@
             this.Controls.Add(this.txtNoiSinh);
             this.Controls.Add(this.txtTenSV);
             this.Controls.Add(this.txtMaSV);
-            this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl6);
@@ -370,7 +343,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNoiSinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbMaChucVu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbTenLop.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGioiTinh.Properties)).EndInit();
@@ -391,12 +363,10 @@
         internal DevExpress.XtraEditors.LabelControl labelControl6;
         internal DevExpress.XtraEditors.LabelControl labelControl7;
         internal DevExpress.XtraEditors.LabelControl labelControl8;
-        internal DevExpress.XtraEditors.LabelControl labelControl9;
         internal DevExpress.XtraEditors.TextEdit txtMaSV;
         internal DevExpress.XtraEditors.TextEdit txtEmail;
         internal DevExpress.XtraEditors.TextEdit txtNoiSinh;
         internal DevExpress.XtraEditors.ComboBoxEdit cbMaChucVu;
-        internal DevExpress.XtraEditors.ComboBoxEdit cbTenLop;
         private DevExpress.XtraEditors.DateEdit txtNgaySinh;
         private DevExpress.XtraEditors.ComboBoxEdit txtGioiTinh;
         internal DevExpress.XtraEditors.TextEdit txtmaGV;

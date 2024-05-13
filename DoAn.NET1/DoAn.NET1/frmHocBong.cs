@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,24 @@ namespace DoAn.NET1
 {
     public partial class frmHocBong : DevExpress.XtraEditors.XtraForm
     {
+        BLL_HocBong hb;
         public frmHocBong()
         {
             InitializeComponent();
+        }
+        public void LoadData()
+        {
+            hb = new BLL_HocBong();
+            dgvHocBong.DataSource = hb.layDSHocBong();
+        }
+        private void frmHocBong_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void dgvHocBong_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

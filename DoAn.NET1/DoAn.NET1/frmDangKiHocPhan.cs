@@ -14,17 +14,17 @@ namespace DoAn.NET1
 {
     public partial class frmDangKiHocPhan : DevExpress.XtraEditors.XtraForm
     {
+        
+        public frmDangKiHocPhan()
+        {
+            InitializeComponent();
+        }
         BLL_DKHP hp;
         public void Load_HP()
         {
             hp = new BLL_DKHP();
             gridControl1.DataSource = hp.layDSHocPhan();
         }
-        public frmDangKiHocPhan()
-        {
-            InitializeComponent();
-        }
-
         private void gridControl1_Click(object sender, EventArgs e)
         {
             Load_HP();
